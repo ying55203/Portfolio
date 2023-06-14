@@ -1,0 +1,463 @@
+img.logo{
+    width: 22%;
+}
+/* 教練介紹banner */
+#banner{
+	width: 100%;
+	height: 100vh;
+	background-image: url(/image/coach/coachBanner-bg.jpg);
+	background-size:cover;
+	background-position:bottom;
+	padding-top: 5rem;
+}
+/* 教練影片 */
+#video{
+	margin-bottom: 9rem;
+	width: 100%;
+	background-size: cover;
+	background-position: bottom;
+	position: relative;
+}
+.yellowBlock{
+	position: absolute;
+	width: 13%;
+	height: auto;
+	top: 20vh;
+	left: 8%;
+	z-index: 1;
+}
+.orangeBlock{
+	position: absolute;
+	width: 14%;
+	height: auto;
+	bottom: -20vh;
+	right: 1rem;
+	z-index: 1;
+}
+.video_title{
+	margin-top: 80px;
+	display: flex;
+	flex-direction: row;
+}
+.video_icon{
+	width: 20%;
+	height: 20%;
+}
+.video_title h2{
+	line-height: 120%;
+	display: flex;
+	flex-direction: column;
+	color: #8C4948;
+	font-size: 4rem;
+	font-weight: 700;
+	letter-spacing: 0.15em;
+	align-items: center;
+}
+.video_title p{
+	color: black;
+	font-size: 2.75rem;
+	font-weight: bold;
+	letter-spacing: 0.13em;
+}
+.video_item{
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+	margin-right:8rem;
+}
+.video_item a{
+	margin-top: 3rem;
+	letter-spacing: 0.2em;
+	padding: 1.5rem 2rem 1.5rem 6rem;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: bold;
+	background-color: #C94344;
+	border-radius: 100px;
+}
+.video_item a img{
+	flex: 1;
+	width: 9%;
+	margin-left: 5rem;
+}
+.video_item p{
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 200%;
+	letter-spacing: 0.05em;
+}
+.video_item h3{
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 200%;
+	letter-spacing: 0.05em;
+}
+.video_box{
+	margin-top: 5rem;
+	align-items: flex-start;
+	z-index: 2;
+}
+/* 教練點開頁面 */
+.t_mask{
+	display: none;
+	background-color: rgba(0,0,0,0.5);
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+    left: 0;
+	z-index: 5;
+}
+
+#teacher_1,
+#teacher_2,
+#teacher_3,
+#teacher_4,
+#teacher_5,
+#teacher_6,
+#teacher_7,
+#teacher_8,
+#teacher_9,
+#teacher_10,
+#teacher_11,
+#teacher_12{
+	display: none;
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 3rem;
+
+	position: fixed;
+	top: 20%;
+    left: 28%;
+	z-index: 5;
+}
+.intro_t figure{
+	width: 40%;
+	margin: 0 4rem 0 2rem;
+}
+.item_t{
+	flex-direction: column;
+}
+.item_t img{
+	width: 80%;
+	z-index: 1;
+}
+.wbox{
+	flex-direction: row;
+	border: 6px solid #F0B278;
+	border-radius: 12px;
+	padding: 2rem 0;
+	margin-top: -1.5rem;
+}
+.word{
+	flex:1;
+	flex-direction: column;
+	padding: 1.5rem 1rem .3rem 1rem;
+}
+.word ul{
+	margin-top: 1rem;
+}
+.word h3{
+	font-weight: 700;
+	font-size: 1.375rem;
+	letter-spacing: 0.1em;
+	color: #8C4948;
+	align-items: center;
+	text-align: center;
+	padding-bottom: .5rem;
+	border-bottom: 2px solid #8C4948;
+}
+.word li{
+	position: relative;
+
+	font-weight: 400;
+	font-size: 1.125rem;
+	color: #212121;
+	line-height: 200%;
+	letter-spacing: 0.05em;
+	align-items: center;
+}
+.word li::before{
+	content: '';
+    display: block;
+    width: .7rem;
+    height: .7rem;
+    border-radius: 6px;
+    background-color: #F0B278;
+
+    position: absolute;
+    top: 30%;
+    left: -1.5rem;
+}
+.close{
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+img.closeBtn{
+	width: 10%;
+}
+.close img:hover{
+	cursor: pointer;
+}
+/* 教練名單 */
+#coach_intro{
+	padding-top: 6rem;
+	padding-bottom: 100px;
+	width: 100%;
+	background-image: url(/image/coach/coachintro-bg.jpg);
+	background-size:auto 100%;
+	background-position:center;
+}
+.list_box{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);/* 4格一排 */
+	width: 70%;
+	margin-top: 2.5rem;
+}
+.coach_intro_title{
+	display: flex;
+	flex-direction: row;
+}
+.intro_title_icon img{
+	width: 100px;
+	height: 100px;
+}
+.intro_title h4{
+	font-size: 1.5rem;
+	letter-spacing: 0.1em;
+	color: #F0B278;
+}
+.intro_title h5{
+	font-weight: 700;
+	font-size: 2.75rem;
+	letter-spacing: 0.13em;
+	margin-top: 0.5rem;
+}
+.intro_title{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.list_item{
+	margin: 2rem;
+}
+figure{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin: 1rem 0;
+}
+figure img{
+	margin: .5rem;
+}
+img.avatar{
+	width: 80%;
+}
+.list_item{
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 160%;
+	letter-spacing: 0.02em;
+}
+.list_item ul{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	align-content: center;
+	flex-wrap: wrap;
+
+}
+.list_item li{
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin: 5px 0;
+	font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 160%;
+}
+.list_item li::before{
+	content: '';
+    display: block;
+    width: .7rem;
+    height: .7rem;
+    border-radius: 6px;
+    background-color: #F0B278;
+
+    position: absolute;
+    bottom: 30%;
+    left: -1rem;
+}
+/* banner跑馬燈 */
+@-webkit-keyframes scroll {
+    0% {
+transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+}
+@keyframes scroll {
+    0% {
+transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+}
+.slider {
+	padding-top: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.slider .slide-track {
+    -webkit-animation: scroll 30s linear infinite;
+            animation: scroll 30s linear infinite;
+    width: calc(250px * 14);
+}
+.slider .slide {
+    width: 80%;
+}
+.slide img{
+    width: 800px;
+}
+/* FAQ */
+#faq{
+	margin-top: 6rem;
+}
+.faq_box {
+	padding-bottom: 50px;
+}
+.widget {
+	margin-top: 44px;
+    width: 80%;
+}
+.widget__list {
+	padding: 10px 10px 10px;
+	
+}
+.widget__link {
+	display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+    border: 2px solid #FFC42D;
+    border-radius: 100px;
+	margin: 10px 0;
+	padding: 15px 10px;
+}
+.widget__list img{
+    margin: 0 20px;
+    margin-bottom: 5px;
+    width: 25px;
+    height: 42px;
+}
+.fa-down {
+	position: relative;
+	display: inline-block;
+	height: 50px;
+	cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+.fa-down:before,
+.fa-down:after {
+	content: ' ';
+	position: absolute;
+	top: 28px;
+	left: -20px;
+	height: 2px;
+	width: 21px;
+	background: #233142;
+	transition: all .5s;
+}
+.fa-down:before {
+	transform: rotate(90deg);
+}
+.fa-down:after {
+	transform: rotate(0deg);
+}
+.fa-down.active:before {
+	transform: rotate(0deg);
+}
+.fa-down.active:after {
+	transform: rotate(0deg);
+}
+.widget__drop {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 5px 0;
+	display: none;
+	font-size: 1.125rem;
+	color: #171717;
+}
+.widget__drop h6{
+	background-color: #FFC42D;
+	border-radius: 50px;
+	padding: 4px 24px;
+	font-weight: 400%;
+	font-size: 1.25rem;
+	letter-spacing: 0.05em;
+	margin: 16px 0;
+}
+.widget__link {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.fa_down{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+div{
+    display: flex;
+    flex-direction: row;
+    /* 設定主軸為垂直 */
+    justify-content: flex-start;
+    /* 設定主軸(垂直)靠上 */
+    align-items: center;
+    /* 設定幅軸(水平)置中 */
+    }
+/* FAQ */
+	#faq{
+		width: 80%;
+	}
+	.faq_title_icon img{
+		width: 100px;
+		height: 100px;
+	}
+	.faq_title_box{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.faq_title h4{
+		font-size: 1.5rem;
+		letter-spacing: 0.1em;
+		margin-bottom: .5rem;
+		color: #9999C3;
+	}
+	.faq_title h5{
+		font-weight: 700;
+		font-size: 2.5rem;
+		letter-spacing: 0.13em;
+	}
+	.faq_title{
+		display: flex;
+		flex-direction: row;
+	}
+	.faq_box{
+		width: 100%;
+	}
+	.widget__drop p{
+		padding: 0 30px;
+	}
