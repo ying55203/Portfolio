@@ -18,6 +18,164 @@
         'wrapAround': true
     });
 </script>
+<style>
+@media (max-width:390px) {
+    /* 導覽列 */
+    #topbar{
+        padding: 0.2rem;
+    }
+    img.logo {
+        width: 40%;
+    }
+    .hamburger {
+        padding: 0.1rem 0.2rem;
+        margin: 0.5rem;
+    }
+    .bar {
+        width: 14px;
+        height: 2px;
+        margin: 4px 10px;
+    }
+    .hamburger.is-active .bar:nth-child(1) {
+		transform: translateY(6px) rotate(45deg);
+	}
+
+	.hamburger.is-active .bar:nth-child(3) {
+		transform: translateY(-6px) rotate(-45deg);
+	}
+    ul.morelogo{
+        width: 0%;
+    }
+    .navigation{
+        top: 69px;
+        right: 0;
+        padding: 10px 45px;
+        border-radius: 25px;
+    }
+    .reserve_btn{
+        margin-left: 3rem;
+    }
+    #fixedTop img {
+        width: 25px;
+        height: 25px;
+    }
+    /* 環境特色內容 */
+    #banner {
+        height: 45vh;   
+    }
+    .feature_title img{
+        display: none;
+    }
+    .titleImg390 img{
+        display: block;
+        width: 262px;
+        height: auto;
+    }
+    .feature_menu {
+        margin-top: 5vh;
+    }
+    .feature_menu img {
+        width: 100px;
+        height: 100px;
+    }
+    .feature_menu ul {
+        flex-direction: column;
+    }
+    .feature_menu ul li a{
+        background: #FFF0CA;
+        border: 2px solid #FFC42D;
+        border-radius: 100px;
+        padding: 8px 24px;
+    }
+    /* 兒童遊戲區 */
+    #kids
+    {
+        padding-bottom: 15vh;
+    }
+    .img_box{
+        width: 90%;
+    }
+    .img_title img {
+        width: 230px;
+        height: auto;
+    }
+    figure.bigImg {
+        width: 110%;
+        margin-top: -1.5rem;
+        filter: drop-shadow(4px 4px 0px #FFC42D);
+    }
+    .smallBox {
+        width: 115%;
+        margin-top: 2vh;
+    }
+    figure.smallImg{
+        margin: 0 0.3rem;
+        filter: drop-shadow(4px 4px 0px #FFC42D);
+    }
+    .text_item {
+        padding-top: 3vh;
+        width: 90%;
+    }
+    /* 休息交誼廳 */
+    #relax,
+    #equipmentRoom {
+        background-size: 300% 100%;
+        height: 110vh;
+    }
+    #relax .bigImg,
+    #relax .smallImg,
+    #equipmentRoom .bigImg,
+    #equipmentRoom .smallImg {
+        filter: drop-shadow(4px 4px 0px #f88d8f);
+    }
+    /* footer */
+    .footer_reserve_btn img {
+        width: 180px;
+        height: auto;
+    }
+    .footer_reserve_btn a {
+        font-weight: 500;
+        font-size: 0.93rem;
+        padding: 0.7rem 2.3rem;
+    }
+    .footer_reserve_btn a img {
+        width: 8px;
+    }
+    .footer_reserve_btn {
+        margin-bottom: 1rem;
+    }
+    .footer_icon a {
+        width: 32px;
+        height: 32px;
+    }
+    .icon-fb {
+        background-image: url(./image/rwd390/fb.png);
+    }
+    .icon-ig {
+        background-image: url(../image/rwd390/ig.png);
+    }
+    .icon-line {
+        background-image: url(../image/rwd390/line.png);
+    }
+    .map a{
+        display: none;
+    }
+    .map {
+        font-size: 0.875rem;
+        margin-bottom: 4rem;
+    }
+    footer{
+        padding: 4rem 0 0 0;
+    }
+    footer p {
+        padding: 1rem 5rem;
+        line-height: 180%;
+        color: #616161;
+        background-color: #FFF0CA;
+        font-size: 0.75rem;
+    }
+}
+</style>
 <body>
     <!-- 首頁 -->
     <header id="topbar">
@@ -53,9 +211,23 @@
         <!-- banner區 -->
         <section id="banner">
             <div class="feature_title">
+                <div class="titleImg390"><img src="./image/rwd390/feature_Banner390.png" alt=""></div>
                 <img src="./image/feature/feature_Banner.png" alt="">
             </div>
         </section>
+        <!-- 環境選單 -->
+        <div class="feature_menu">
+            <img src="./image/feature/啞鈴-05.svg" alt="">
+            <ul class="item1">
+                <li><a href="#kids">兒童遊戲區</a></li>
+                <li><a href="#relax">休憩交誼廳</a></li>
+                <li><a href="#massage">運動按摩室</a></li>
+            </ul>
+            <ul class="item2">
+                <li><a href="#equipmentRoom">重訓器材室</a></li>
+                <li><a href="#groupRoom">團體課教室</a></li>
+            </ul>
+        </div>
         <!-- 側邊固定欄 -->
         <div class="sticky_sidebar">
             <ul class="side_menu">
@@ -145,7 +317,6 @@
                 <div class="text_item">
                     <p>對於運動愛好者和運動員來說，運動按摩可以幫助他們在運動前熱身，減少受傷風險；在<span>運動後恢復身體，減輕疲勞和酸痛</span>；以及在日常生活中緩解身體緊張和不適。
                     </p>
-                    <br>
                     <br>
                     <br>
                     <p>我們提供<span class="massage_light">專業的運動按摩服務，受過嚴謹訓練的按摩師將根據您的需求進行個性化療程</span>，無論是想要緩解運動疲勞、提高運動表現，還是減輕日常生活中的壓力和不適，我們都可以幫助您達到最佳的身體狀態。

@@ -384,6 +384,12 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
 	.hamburger.is-active .bar:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg);
 	}
+    ul.morelogo{
+        width: 0%;
+    }
+    .reserve_btn{
+        margin-left: 2rem;
+    }
 	.navigation {
 		display: none;
 		position: absolute;
@@ -470,7 +476,7 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
     #parentChild_yoga,
     #parentChild_dance,
     #parentChild_tabletennis{
-        
+        height: 100vh;
     }
     /* footer */
     #fixedTop{
@@ -540,4 +546,92 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
 	.menu a {
 		padding: 15px 10px;
 	}
+}
+@media (max-width:390px) {
+    /* 導覽列 */
+    #topbar{
+        padding: 0.2rem;
+    }
+    img.logo {
+        width: 40%;
+    }
+    .hamburger {
+        padding: 0.1rem 0.2rem;
+        margin: 0.5rem;
+    }
+    .bar {
+        width: 14px;
+        height: 2px;
+        margin: 4px 10px;
+    }
+    .hamburger.is-active .bar:nth-child(1) {
+		transform: translateY(6px) rotate(45deg);
+	}
+
+	.hamburger.is-active .bar:nth-child(3) {
+		transform: translateY(-6px) rotate(-45deg);
+	}
+    ul.morelogo{
+        width: 0%;
+    }
+    .navigation{
+        background-color: rgb(255, 255, 255,0.8);
+        top: 69px;
+        right: 0;
+        padding: 10px 45px;
+        border-radius: 25px;
+    }
+    .reserve_btn{
+        margin-left: 3rem;
+    }
+    #fixedTop img {
+        width: 25px;
+        height: 25px;
+    }
+        /* footer */
+    .footer_reserve_btn img {
+        width: 180px;
+        height: auto;
+    }
+    .footer_reserve_btn a {
+        font-weight: 500;
+        font-size: 0.93rem;
+        padding: 0.7rem 2.3rem;
+    }
+    .footer_reserve_btn a img {
+        width: 8px;
+    }
+    .footer_reserve_btn {
+        margin-bottom: 1rem;
+    }
+    .footer_icon a {
+        width: 32px;
+        height: 32px;
+    }
+    .icon-fb {
+        background-image: url(./image/rwd390/fb.png);
+    }
+    .icon-ig {
+        background-image: url(../image/rwd390/ig.png);
+    }
+    .icon-line {
+        background-image: url(../image/rwd390/line.png);
+    }
+    .map a{
+        display: none;
+    }
+    .map {
+        font-size: 0.875rem;
+        margin-bottom: 4rem;
+    }
+    footer{
+        padding: 4rem 0 0 0;
+    }
+    footer p {
+        padding: 1rem 5rem;
+        line-height: 180%;
+        color: #616161;
+        background-color: #FFF0CA;
+        font-size: 0.75rem;
+    }
 }

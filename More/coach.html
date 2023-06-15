@@ -5,58 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoreFitness_Coach</title>
+    <!-- 公告輪播css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css'>
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/coach.css">
 </head>
-<style>
-    @media (min-width:769px){
-	.hamburger {
-		display: none;
-	}
-}
-@media (max-width:768px) {
-    #banner{
-        height: 50vh;
-    }
-    .slide img {
-        width: 500px;
-        height: auto;
-    }
-    .video_title h2{
-        font-size: 2.25rem;
-    }
-    .video_title p{
-        font-size: 1.5rem;
-    }
-    .video_icon{
-        width: 18%;
-        height: 18%;
-    }
-    .video_box{
-        flex-direction: column;
-        align-items: center;
-    }
-    .video_title{
-        justify-content: center;
-    }
-    .video_item{
-        margin-right: 0;
-        margin-bottom: 6rem;
-    }
-    .video_item p{
-        font-size: 1.04rem;
-    }
-    .video_item h3 {
-        font-size: 1.04rem;
-    }
-    .video_item a{
-        font-size: 1.04rem;
-        padding: .8rem 2rem .8rem 6rem;
-    }
-}
-</style>
 <body>
     <header id="topbar">
         <a href="index.html"><img src="./image/logo/logo.png" alt="MoreFitness" class="logo"></a>
@@ -601,6 +557,77 @@
                 </ul>
             </article>
             </div>
+            <!-- RWD -->
+            <div class="list_box2">
+                <div class="hero-slider" data-carousel>
+                    <div class="carousel-cell">
+                        <div class="inner">
+                            <div class="list_item2">
+                                <figure id="rw_teach_1">
+                                    <img src="./image/coach/照片.png" alt="" class="rw_avatar">
+                                    <img src="./image/coach/name.png" alt="" class="rw_name">
+                                </figure>
+                                <figure id="rw_teach_2">
+                                    <img src="./image/coach/照片 (1).png" alt="" class="rw_avatar">
+                                    <img src="./image/coach/name (1).png" alt="" class="rw_name">
+                                </figure>
+                                <figure id="rw_teach_3">
+                                    <img src="./image/coach/照片 (2).png" alt="" class="rw_avatar">
+                                    <img src="./image/coach/name (2).png" alt="" class="rw_name">
+                                </figure>
+                                <figure id="rw_teach_4">
+                                    <img src="./image/coach/照片 (3).png" alt="" class="rw_avatar">
+                                    <img src="./image/coach/name (3).png" alt="" class="rw_name">
+                                </figure>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="carousel-cell">
+                        <div class="inner">
+                            <div class="list_item2">
+                                <figure id="rw_teach_5">
+                                    <img src="./image/coach/照片 (4).png" alt="" class="rw_avatar">
+                                    <img src="./image/coach/name (4).png" alt="" class="rw_name">
+                                </figure>
+                                <figure id="rw_teach_6">
+                                    <img src="./image/coach/照片 (5).png" alt="" class="rw_avatar">
+                                    <img src="./image/coach/name (5).png" alt="" class="rw_name">
+                                </figure>
+                                <figure id="rw_teach_7">
+                                    <img src="./image/coach/照片 (6).png" alt="" class="rw_avatar">
+                                    <img src="./image/coach/name (6).png" alt="" class="rw_name">
+                                </figure>
+                                <figure id="rw_teach_8">
+                                    <img src="./image/coach/照片 (7).png" alt="" class="rw_avatar">
+                                    <img src="./image/coach/name (7).png" alt="" class="rw_name">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="inner">
+                            <div class="list_item2">
+                                <figure id="rw_teach_9">
+                                    <img src="./image/coach/照片 (8).png" alt="" class="rw_avatar">
+                                    <img src="./image/coach/name (8).png" alt="" class="rw_name">
+                                </figure>
+                                <figure id="rw_teach_10">
+                                    <img src="./image/coach/照片 (9).png" alt="" class="rw_avatar">
+                                    <img src="./image/coach/name (9).png" alt="" class="rw_name">
+                                </figure>
+                                <figure id="rw_teach_11">
+                                    <img src="./image/coach/照片 (10).png" alt="" class="rw_avatar">
+                                    <img src="./image/coach/name (10).png" alt="" class="rw_name">
+                                </figure>
+                                <figure id="rw_teach_12">
+                                    <img src="./image/coach/照片 (11).png" alt="" class="rw_avatar">
+                                    <img src="./image/coach/name (11).png" alt="" class="rw_name">
+                                </figure>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
         </section>
         <section id="faq">
             <div class="faq_title">
@@ -737,6 +764,8 @@
         <!-- JS -->
         <script src="./jQuery/js/jquery-3.7.0.js"></script>
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <!-- partial 公告輪播-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js'></script>
         <script src="./JS/top.js"></script>
         <script src="./JS/coach.js"></script>
 </body>

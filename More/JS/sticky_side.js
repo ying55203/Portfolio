@@ -39,6 +39,13 @@ $(function(){
         }
 
     });
+    // 上方選單滑動至指定區塊位置
+    $('.feature_menu ul li a').click(function () {
+        var btn = $(this).attr('href');
+        var pos = $(btn).offset();
+        $('html,body').animate({ scrollTop: pos.top }, 1500);
+
+    });
 
     // 點選側選單滑動至指定區塊位置
     $('.side_menu a').click(function () {

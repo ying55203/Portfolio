@@ -147,6 +147,7 @@ img.logo{
 }
 .wbox{
 	flex-direction: row;
+	align-items: flex-start;
 	border: 6px solid #F0B278;
 	border-radius: 12px;
 	padding: 2rem 0;
@@ -155,7 +156,7 @@ img.logo{
 .word{
 	flex:1;
 	flex-direction: column;
-	padding: 1.5rem 1rem .3rem 1rem;
+	padding: 1.5rem 1rem .3rem 2rem;
 }
 .word ul{
 	margin-top: 1rem;
@@ -204,6 +205,9 @@ img.closeBtn{
 	cursor: pointer;
 }
 /* 教練名單 */
+.list_box2{
+	display: none;
+}
 #coach_intro{
 	padding-top: 6rem;
 	padding-bottom: 100px;
@@ -460,4 +464,261 @@ div{
 	}
 	.widget__drop p{
 		padding: 0 30px;
+	}
+
+	@media (max-width:768px) {
+		#banner{
+			height: 50vh;
+		}
+		.slide img {
+			width: 500px;
+			height: auto;
+		}
+		/* video區 */
+		.video_title h2{
+			font-size: 2.25rem;
+		}
+		.video_title p{
+			font-size: 1.5rem;
+		}
+		.video_icon{
+			width: 18%;
+			height: 18%;
+		}
+		.video_box{
+			flex-direction: column;
+			align-items: center;
+		}
+		.video_title{
+			justify-content: center;
+		}
+		.video_item{
+			margin-right: 0;
+			margin-bottom: 6rem;
+		}
+		.video_item p{
+			font-size: 1.04rem;
+		}
+		.video_item h3 {
+			font-size: 1.04rem;
+		}
+		.video_item a{
+			font-size: 1.04rem;
+			padding: .8rem 2rem .8rem 6rem;
+		}
+		.coach_video iframe{
+			width: 409px;
+			height: 266px;
+		}
+		.yellowBlock{
+			width: 18%;
+			left: -5%;
+		}
+		.orangeBlock {
+			width: 19%;
+			bottom: -10vh;
+			right: 0;
+		}
+		/* 教練區 */
+		#coach_intro{
+			height: 90vh;
+		}
+		.coach_intro_title{
+			margin-top: 10vh;
+		}
+		.list_box{/* 隱藏原本教練列表 */
+			display: none;
+		}
+		.list_box2{/* 顯示輪播教練列表 */
+			display: flex;
+		}
+		.intro_title_icon img,
+		.faq_title_icon img {
+			width: 70px;
+			height: 70px;
+		}
+		.intro_title h4,
+		.faq_title h4{
+			font-size: 1.04rem;
+		}
+		.intro_title h5,
+		.faq_title h5{
+			font-size: 1.81rem;
+		}
+		.hero-slider {
+			width: 90vw;
+			height: 90vh;
+			margin: -8rem auto 0 auto;
+		/* overflow: hidden; */
+		}
+		.hero-slider .carousel-cell {
+			width: 100%;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			justify-content: center;
+		}
+		.hero-slider .carousel-cell .inner {
+			position: relative;
+			top: 55%;
+			transform: translateY(-50%);
+			color: white;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+		}
+		.hero-slider .carousel-cell .inner .subtitle {
+			font-size: 1.5rem;
+			line-height: 1em;
+			font-weight: 500;
+			font-style: italic;
+			letter-spacing: 3px;
+			color: rgba(0, 0, 0, 0.9);
+			margin-bottom: 5px;
+		}
+		.hero-slider .carousel-cell .inner .title {
+			font-size: 2rem;
+			line-height: 1.2em;
+			color: rgb(0, 0, 0);
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			margin-bottom: 40px;
+		}
+		.hero-slider .carousel-cell .inner .complete_btn {
+			border: 1px solid #fff;
+			padding: 14px 18px;
+			font-weight: 400;
+			text-transform: uppercase;
+			font-size: 1rem;
+			letter-spacing: 3px;
+			color: rgb(154,154,154);
+			text-decoration: none;
+			transition: all 0.2s ease;
+		}
+		.hero-slider .carousel-cell .inner .complete_btn:hover {
+			background: #fff;
+			color: #000;
+		}
+		.hero-slider .flickity-prev-next-button {
+			width: 8%;
+			height: 16%;
+			background: transparent;
+		}
+		.hero-slider .flickity-prev-next-button:hover {
+			background: transparent;
+		}
+		.hero-slider .flickity-prev-next-button .arrow {
+			fill: #8C4948;/* 線條填色 */
+			stroke:#8C4948;/* 邊框 */
+			stroke-width:15px;/* 邊框-厚度 */
+			stroke-linecap:round;/* 邊框端點-圓角 */
+			stroke-linejoin:round;/* 邊框尖角-圓角 */
+		}
+		.hero-slider .flickity-page-dots {
+			display: none;
+			bottom: 100px;
+		}
+		.hero-slider .flickity-page-dots .dot {
+			width: 30px;
+			height: 4px;
+			opacity: 1;
+			background: rgba(255, 255, 255, 0.5);
+			border: 0 solid white;
+			border-radius: 0;
+		}
+		.hero-slider .flickity-page-dots .dot.is-selected {
+			background: #8C4948;
+			border: 0 solid #8C4948;
+		}
+		.flickity-viewport{
+			width: 100%;
+			height: 60%;
+		}
+		.list_item2{
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			margin-top: 2rem;
+		}
+		.list_item2 figure{
+			margin:1rem 2rem;
+		}
+		img.rw_avatar{
+			width: 179px;
+			height: 179px;
+		}
+		img.rw_name{
+			width: 160px;
+			height: 45px;
+		}
+		/* 教練點開詳情頁面 */
+		.intro_t{
+			flex-direction: column;
+			position: relative;
+		}
+		#teacher_1, #teacher_2, #teacher_3, #teacher_4, #teacher_5, #teacher_6, #teacher_7, #teacher_8, #teacher_9, #teacher_10, #teacher_11, #teacher_12{
+			padding: 1rem;
+			top: 25%;
+			left: 20%;
+		}
+		.t_box figure img {
+			margin: 1rem 1rem 1rem 2rem;
+			width: 210px;
+			height: 210px;
+		}
+	
+		.item_t img {
+			width: 246.91px;
+			height: 59.46px;
+			z-index: 1;
+		}
+		.close{
+			position: absolute;
+			top: 20px;
+			right: 20px;
+		}
+		.close img {
+			width: 49.5px;
+			height: 49.5px;
+			z-index: 1;
+		}
+		.wbox{
+			width: 90%;
+			padding: 2rem 0 1rem 1rem;
+			margin-bottom: 2rem;
+		}
+		.word{
+			padding: 1rem 0.5rem 0 0.5rem;
+			margin: 0 0.5rem;
+		}
+		.word h3{
+			font-size: 1.187rem;
+		}
+		.word li{
+			font-size: 1rem;
+		}
+		/* FAQ */
+		.widget__list img{
+		   width: 21px;
+		   height: 33px; 
+		}
+		.fa_down{
+			font-size: 1.125rem;
+			font-weight: 500;
+		}
+		.widget__drop h6{
+			font-size: 1rem;
+			margin: 14px 25px;
+			padding: 6px 11px;
+		}
+		.widget__drop p{
+			font-size: 1rem;
+		}
+		.fa-down:before, .fa-down:after{
+			width: 16px;
+		}
+		.widget__link{
+			padding: 0 10px;
+		}
 	}

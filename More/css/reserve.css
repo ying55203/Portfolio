@@ -111,7 +111,7 @@ small{
     font-size: 0.8rem;
     color: #000000;
 }
-button{
+#reserve_from button{
     width: 100%;
     height: 60px;
     display: flex;
@@ -125,7 +125,7 @@ button{
     border: none;
     padding: 0;
 }
-.button{
+#reserve_from .button{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -155,4 +155,67 @@ button{
 footer {
     background-image: url(./image/reserve/Footer.jpg);
     width: 100%;
+}
+@media (max-width:768px) {
+    img.logo {
+        width: 22%;
+    }
+    #topbar button{
+        margin-top: 0;
+    }
+    #reserve{
+        width: 75%;
+        flex-direction: column;
+    }
+    h2.reserve_title{
+        font-size: 4.875rem;
+    }
+    #reserve_pic p{
+        font-size: .9rem;
+    }
+    img.freepic{
+        width: 14%;
+        margin-left: 3rem;
+    }
+    img.logopic {
+        width: 16%;
+        margin-bottom: -2vh;
+        margin-left: 16rem;
+    }
+    #reserve_from{
+        font-size: 0.9rem;
+    }
+    input#username, input#tel, input#email{
+        width: 250px;
+        height: 38px;
+    }
+    #time{
+        width: 265px;
+        height: 42px;
+    }
+    .text_box{
+        margin: 0.5rem 15px 8px 0;
+    }
+    #message{
+        width: 95%;
+        height: 40px;
+    }
+    .label_option {
+        font-size: 0.9rem;
+    }
+    small {
+        font-size: 0.75rem;
+    }
+    #reserve_from .button{
+        padding: 9px 32px;
+    }
+    #reserve_from .button span {
+        font-size: 1.125rem;
+        margin: 0px 30px;
+    }
+    #reserve_from .button img {
+        width: 20px;
+        height: 20px;
+        margin-left: 15px;
+    }
 }

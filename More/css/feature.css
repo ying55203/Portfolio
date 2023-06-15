@@ -382,6 +382,12 @@ h2.footer_title{
 .feature_title img{
     width: 70%;
 }
+.feature_menu{
+    display: none;
+}
+.titleImg390 img{
+    display: none;
+}
 /* 兒童遊戲區(kids) */
 #kids{
     height: 100vh;
@@ -435,9 +441,8 @@ figure.smallImg{
 .text_item{
     flex: 1;
     padding-top: 10vh;
-    margin: 0 3vw;
+    margin: 0 2rem;
     width: 70%;
-    display: flex;
     align-items: flex-start;
 }
 .text_item p{
@@ -478,7 +483,7 @@ h5.kids_h.long::before{
     width: 162px;
 }
 h5.relax_h::before{
-    background-color: #F88D8E;
+    background-color: #F88D8Ebb;
 }
 /* 休憩交誼廳(relax) */
 #relax{
@@ -658,6 +663,12 @@ li.side_5.active{
 	.hamburger.is-active .bar:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg);
 	}
+    ul.morelogo{
+        width: 0%;
+    }
+    .reserve_btn{
+        margin-left: 2rem;
+    }
 	.navigation {
 		display: none;
 		position: absolute;
@@ -709,6 +720,124 @@ li.side_5.active{
         padding: 0.35rem 0.8rem;
         font-size: 0.68rem;
     }
+    /* (feature)環境特色 */
+    #banner{
+        height: 65vh;
+    }
+    .feature_title {
+        width: 80%;
+    }
+    /* 隱藏側選單，顯示上方環境選單 */
+    .sticky_sidebar{
+        visibility: hidden; /* 隱藏 */
+    }
+    .feature_menu{
+        margin-top: 10vh;
+        display: flex;
+        z-index: 5;
+    }
+    .feature_menu img{
+        transform: rotate(90deg);
+        width: 80px;
+        height: 80px;
+    }
+    .feature_menu ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .feature_menu ul li{
+        margin:.8rem 1.5rem;
+    }
+    .feature_menu ul li a{
+        display: block;
+        text-decoration: none;
+        color: #8C4948;
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        text-align: center;
+        letter-spacing: 0.1em;
+        border-bottom: 3px solid #FFC42D;
+    }
+    /* kids */
+    #kids{
+        margin-top: 10vh;
+    }
+    .kids_box,
+    .relax_box,
+    .massage_box,
+    .equipmentRoom_box,
+    .groupRoom_box{
+        flex-direction: column;
+    }
+    .img_title img {
+        width: 75%;
+    }
+    figure.bigImg{
+        width: 88%;
+        margin-top: -2rem;
+        filter: drop-shadow(6px 6px 0px #FFC42D);
+    }
+    figure.smallImg{
+        height: 10vh;
+        filter: drop-shadow(6px 6px 0px #FFC42D);
+    }
+    .smallBox{
+        margin-top: 3vh;
+    }
+    .text_item {
+        padding-top: 6vh;
+        width: 70%;
+    }
+    .text_item p{
+        font-size: 0.875rem;
+    }
+    h5.kids_h, h5.kids_h.long, h5.relax_h{
+        font-size: 1.06rem;
+    }
+    h5.kids_h.long::before,
+    h5.kids_h::before,
+    h5.relax_h::before{
+        width: 70px;
+        height: 12px;
+        bottom: 5px;
+        left: -10px;
+    }
+    h5.kids_h.long::before {
+        width: 110px;
+    }
+    /* relax */
+    h5.relax_h{
+        z-index: 2;
+    }
+    h5.relax_h::before {
+        background-color: #f88d8fbb;
+    }
+    #relax .bigImg, #relax .smallImg,
+    #equipmentRoom .bigImg, #equipmentRoom .smallImg{
+        filter: drop-shadow(6px 6px 0px #f88d8f);
+    }
+    /* group */
+    .groupRoom_box .text_item{
+        align-items: center;
+    }
+    .classbtn{
+        margin-top: 40px;
+    }
+    .classbtn p {
+        font-size: 1rem;
+    }
+    .btnImg{
+        width: 24px;
+        height: 24px;
+        background-image: url(../image/feature/groupRoom/Btn-1.png);
+        margin-left: 10px;
+    }
+    .classbtn:hover .btnImg{
+        background-image: url(../image/feature/groupRoom/right_btn_y-1.png);
+    }
+    /* ----------------------------- */
+    /* 動畫 */
 	@keyframes navigation {
 		from {
 			opacity: 1;
@@ -741,4 +870,161 @@ li.side_5.active{
 	.menu a {
 		padding: 15px 10px;
 	}
+}
+@media (max-width:390px) {
+    /* 導覽列 */
+    #topbar{
+        padding: 0.2rem;
+    }
+    img.logo {
+        width: 40%;
+    }
+    .hamburger {
+        padding: 0.1rem 0.2rem;
+        margin: 0.5rem;
+    }
+    .bar {
+        width: 14px;
+        height: 2px;
+        margin: 4px 10px;
+    }
+    .hamburger.is-active .bar:nth-child(1) {
+		transform: translateY(6px) rotate(45deg);
+	}
+
+	.hamburger.is-active .bar:nth-child(3) {
+		transform: translateY(-6px) rotate(-45deg);
+	}
+    ul.morelogo{
+        width: 0%;
+    }
+    .navigation{
+        background-color: rgb(255, 255, 255,0.8);
+        top: 69px;
+        right: 0;
+        padding: 10px 45px;
+        border-radius: 25px;
+    }
+    .reserve_btn{
+        margin-left: 3rem;
+    }
+    #fixedTop img {
+        width: 25px;
+        height: 25px;
+    }
+    /* 環境特色內容 */
+    #banner {
+        height: 45vh;   
+    }
+    .feature_title img{
+        display: none;
+    }
+    .titleImg390 img{
+        display: block;
+        width: 262px;
+        height: auto;
+    }
+    .feature_menu {
+        margin-top: 5vh;
+    }
+    .feature_menu img {
+        width: 100px;
+        height: 100px;
+    }
+    .feature_menu ul {
+        flex-direction: column;
+    }
+    .feature_menu ul li a{
+        background: #FFF0CA;
+        border: 2px solid #FFC42D;
+        border-radius: 100px;
+        padding: 8px 24px;
+    }
+    /* 兒童遊戲區 */
+    #kids
+    {
+        padding-bottom: 15vh;
+    }
+    .img_box{
+        width: 90%;
+    }
+    .img_title img {
+        width: 230px;
+        height: auto;
+    }
+    figure.bigImg {
+        width: 110%;
+        margin-top: -1.5rem;
+        filter: drop-shadow(4px 4px 0px #FFC42D);
+    }
+    .smallBox {
+        width: 115%;
+        margin-top: 2vh;
+    }
+    figure.smallImg{
+        margin: 0 0.3rem;
+        filter: drop-shadow(4px 4px 0px #FFC42D);
+    }
+    .text_item {
+        padding-top: 3vh;
+        width: 90%;
+    }
+    /* 休息交誼廳 */
+    #relax,
+    #equipmentRoom {
+        background-size: 300% 100%;
+        height: 110vh;
+    }
+    #relax .bigImg,
+    #relax .smallImg,
+    #equipmentRoom .bigImg,
+    #equipmentRoom .smallImg {
+        filter: drop-shadow(4px 4px 0px #f88d8f);
+    }
+    /* footer */
+    .footer_reserve_btn img {
+        width: 180px;
+        height: auto;
+    }
+    .footer_reserve_btn a {
+        font-weight: 500;
+        font-size: 0.93rem;
+        padding: 0.7rem 2.3rem;
+    }
+    .footer_reserve_btn a img {
+        width: 8px;
+    }
+    .footer_reserve_btn {
+        margin-bottom: 1rem;
+    }
+    .footer_icon a {
+        width: 32px;
+        height: 32px;
+    }
+    .icon-fb {
+        background-image: url(./image/rwd390/fb.png);
+    }
+    .icon-ig {
+        background-image: url(../image/rwd390/ig.png);
+    }
+    .icon-line {
+        background-image: url(../image/rwd390/line.png);
+    }
+    .map a{
+        display: none;
+    }
+    .map {
+        font-size: 0.875rem;
+        margin-bottom: 4rem;
+    }
+    footer{
+        padding: 4rem 0 0 0;
+    }
+    footer p {
+        padding: 1rem 5rem;
+        line-height: 180%;
+        color: #616161;
+        background-color: #FFF0CA;
+        font-size: 0.75rem;
+    }
 }
