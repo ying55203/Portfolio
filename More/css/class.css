@@ -548,6 +548,11 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
 	}
 }
 @media (max-width:390px) {
+    /* top按鈕 */
+    #fixedTop {
+        bottom: 1rem;
+        right: 1rem;
+    }
     /* 導覽列 */
     #topbar{
         padding: 0.2rem;
@@ -603,6 +608,12 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
     }
     .footer_reserve_btn {
         margin-bottom: 1rem;
+    }
+    .footer_reserve_btn .r_btn{
+        background-image: url(../image/rwd390/right_w.png);
+        width: 7px;
+        height: 12px;
+        margin-left: 2rem;
     }
     .footer_icon a {
         width: 32px;

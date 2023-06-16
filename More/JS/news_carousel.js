@@ -24,7 +24,6 @@ flkty.on('scroll', function () {
         image.style.backgroundPosition = x + 'px';
     });
 });
-
 //---漢堡按鈕---
 $('.hamburger').click(function () {
     $(this).toggleClass('is-active');

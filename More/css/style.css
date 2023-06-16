@@ -307,10 +307,12 @@ h2.footer_title{
 .footer_reserve_btn img{
     width: 20%;
 }
-.footer_reserve_btn a img{
-    width: 7%;
-    margin-left: 1.2rem;
-    flex: 1;
+.footer_reserve_btn .r_btn{
+    background-image: url(../image/icon/right_w.svg);
+    width: 12px;
+    height: 20px;
+    margin-left: 3rem;
+    margin-top: 5px;
 }
 .footer_reserve_btn a{
     margin-left: 3rem;
@@ -323,12 +325,21 @@ h2.footer_title{
     text-align: center;
     letter-spacing: 0.2em;
     font-weight: 700;
+    border: 2.5px solid #C94344;
     background-color: #C94344;
     border-radius: 50px;
 }
 .footer_reserve_btn{
     flex-direction: row;
     justify-content: center;
+}
+.footer_reserve_btn a:hover{
+    background-color: transparent;
+    color: #C94344;
+    border: 2.5px solid #C94344;
+}
+.footer_reserve_btn a:hover .r_btn{
+    background-image: url(../image/icon/right.svg);
 }
 .map{
     display: flex;
@@ -519,6 +530,11 @@ footer > div{
 	}
 }
 @media (max-width:390px) {
+    /* top按鈕 */
+    #fixedTop {
+        bottom: 1rem;
+        right: 1rem;
+    }
     /* 導覽列 */
     #topbar{
         padding: 0.2rem;
@@ -575,12 +591,18 @@ footer > div{
     .footer_reserve_btn {
         margin-bottom: 1rem;
     }
+    .footer_reserve_btn .r_btn{
+        background-image: url(../image/rwd390/right_w.png);
+        width: 7px;
+        height: 12px;
+        margin-left: 2rem;
+    }
     .footer_icon a {
         width: 32px;
-        height: 32px;
+        height: 30px;
     }
     .icon-fb {
-        background-image: url(./image/rwd390/fb.png);
+        background-image: url(../image/rwd390/fb.png);
     }
     .icon-ig {
         background-image: url(../image/rwd390/ig.png);

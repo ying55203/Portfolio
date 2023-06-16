@@ -57,7 +57,29 @@
         bottom: 0;
         right: -25px;
     }
+}
+@media (max-width:390px) {
+    .orangeBlock1{
+        width: auto;
+        height: 100px!important;
+        top: 200px;
+        left: -20px;
     }
+    .yellowBlock1{
+        width: auto;
+        height: 100px!important;
+        top: 120px;
+        right: 100px;
+        z-index: -1;
+    }
+    .pinkBlock1{
+        width: auto;
+        height: 150px!important;
+        bottom: 0;
+        right: -25px;
+        z-index: -1;
+    }
+}
 </style>
 <body>
     <header id="topbar">
@@ -146,7 +168,7 @@
     <footer>
         <div class="footer_reserve_btn">
             <img src="./image/logo/logo.svg" alt="">
-            <a href="./reserve.html">免費預約體驗<img src="./image/icon/rightbtn_b.svg" alt=""></a>
+            <a href="./reserve.html">免費預約體驗<div class="r_btn"></div></a>
         </div>
         <ul class="footer_menu">
             <li><a href="about.html" class="menu_title">

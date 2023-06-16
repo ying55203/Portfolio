@@ -22,6 +22,9 @@ img.freepic{
     width: 18%;
     height: auto;
 }
+p.reserve_p2{
+    display: none;
+}
 .logo_box{
     width: 80%;
     margin-bottom: -20px;

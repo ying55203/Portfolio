@@ -12,6 +12,62 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reserve.css">
 </head>
+<style>
+@media (max-width:390px) {
+    img.logo {
+        width: 35%;
+    }
+    #reserve_bg{
+        height: 50vh;
+        margin-bottom: 100vh;
+    }
+    .logo_box {
+        width: 75%;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    img.logopic {
+        margin: 0;
+        width: 65.53px;
+        height: 65.53px;
+    }
+    img.freepic {
+        width: 72.36px;
+        height: 60.49px;
+        margin: -75px 10px 0 0;
+    }
+    h2.reserve_title {
+        font-size: 3.125rem;
+    }
+    p.reserve_p1 {
+        display: none;
+    }
+    #reserve_pic p.reserve_p2 {
+        display: block;
+        font-size: .8rem;
+    }
+    .message_box {
+        flex-direction: column;
+        margin: 0;
+    }
+    #reserve_from{
+        margin-top: 20vh;
+    }
+    .text_box label{
+        margin-bottom: .5rem;
+    }
+    .label_option {
+        font-size: .9rem;
+    }
+    input[type="radio" i] {
+        width: 17px;
+        height: 17px;
+    }
+    footer {
+        background-image: url(./image/Footer-bg.jpg);
+    }
+}
+</style>
 <body>
     <!-- 首頁 -->
     <header id="topbar">
@@ -50,10 +106,11 @@
         <section id="reserve_pic">
             <div class="logo_box">
                 <img src="./image/reserve/free.png" alt="free" class="freepic">
-                <img src="./image/reserve/LOGO.gif" alt="logo" class="logopic">
+                <img src="./image/home/fitness.gif" alt="logo" class="logopic">
             </div>
             <h2 class="reserve_title">預約體驗</h2>
-            <p>請填寫右方表單，將由專員與您聯繫確認體驗時間等細節</p>
+            <p class="reserve_p1">請填寫右方表單，將由專員與您聯繫確認體驗時間等細節</p>
+            <p class="reserve_p2">請填寫下方表單，將由專員與您聯繫</p>
         </section>
         <!-- 表單區 -->
         <section id="reserve_from">
@@ -127,7 +184,7 @@
     <footer>
         <div class="footer_reserve_btn">
             <img src="./image/logo/logo.svg" alt="">
-            <a href="./reserve.html">免費預約體驗<img src="./image/icon/rightbtn_b.svg" alt=""></a>
+            <a href="./reserve.html">免費預約體驗<div class="r_btn"></div></a>
         </div>
         <ul class="footer_menu">
             <li><a href="about.html" class="menu_title">
