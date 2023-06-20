@@ -153,6 +153,7 @@ nav{
     background-color: #fff;
     border-radius: 50px;
     box-shadow: 0px 2px 6px rgba(0,0,0,0.25);
+    font-size: 1.125rem;
 }
 .morelogo{
     width: 16%;
@@ -382,16 +383,16 @@ h2.footer_title{
     background-image: url(../image/feature/featureBanner-bg.jpg);
     background-size:cover;
     background-position: bottom;
-    height: 100vh;
+    height: 90vh;
     z-index: -2;
 }
 
 .feature_title{
-    width: 70%;
-    margin-top: 5vh;
+    width: 60%;
+    margin-top: 3vh;
 }
 .feature_title img{
-    width: 70%;
+    width: 65%;
 }
 .feature_menu{
     display: none;
@@ -439,6 +440,7 @@ figure.smallImg{
 .massage_box,
 .equipmentRoom_box,
 .groupRoom_box{
+    margin-top: 3vh;
     width: 70%;
     display: flex;
     flex-direction: row;
@@ -476,6 +478,7 @@ h5.relax_h{
     line-height: 200%;
     letter-spacing: 0.1em;
     color: #621D1C;
+    z-index: 1;
 }
 h5.kids_h.long::before,
 h5.kids_h::before,
@@ -516,7 +519,7 @@ h5.relax_h::before{
 /* 重訓器材室(equipmentRoom) */
 #equipmentRoom{
     width: 100%;
-    background-image: url(../image/feature/equipmentRoom/equipment-bg.jpg);
+    background-image: url(../image/feature/equipmentRoom/equipment-bg.png);
     background-size: 100% 100%;
     height: 100vh;
 }
@@ -791,10 +794,10 @@ li.side_5.active{
     }
     /* (feature)環境特色 */
     #banner{
-        height: 65vh;
+        height: 80vh;
     }
-    .feature_title {
-        width: 80%;
+    .feature_title img {
+        width: 500px;
     }
     /* 隱藏側選單，顯示上方環境選單 */
     .sticky_sidebar{

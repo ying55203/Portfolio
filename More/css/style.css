@@ -159,7 +159,7 @@ div{
     /* 設定主軸(垂直)靠上 */
     align-items: center;
     /* 設定幅軸(水平)置中 */
-    }
+}
 img.logo{
     width: 18%;
     display: none;
@@ -182,6 +182,7 @@ nav{
     background-color: #fff;
     border-radius: 50px;
     box-shadow: 0px 2px 6px rgba(0,0,0,0.25);
+    font-size: 1.125rem;
 }
 .morelogo{
     width: 16%;

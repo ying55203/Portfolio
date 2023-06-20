@@ -159,6 +159,7 @@ nav{
   background-color: #fff;
   border-radius: 50px;
   box-shadow: 0px 2px 6px rgba(0,0,0,0.25);
+  font-size: 1.125rem;
 }
 .morelogo{
   width: 16%;
@@ -414,8 +415,7 @@ footer > div{
 /* counter */
 #count{
   background-image: url(../image/member/counter-bg.png);
-  background-size:contain;
-  background-repeat: repeat-x;
+  background-size: 100% 100%;
   height: 80vh;
   display: flex;
   flex-direction: row;
@@ -599,7 +599,7 @@ flex-direction: column;
   }
   .member_item{
     width: 70%;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     border: 7px solid #F0B278;
     border-radius: 120px 1000px 1000px 120px;
@@ -623,8 +623,8 @@ flex-direction: column;
   }
   figure{
     flex: 1;
-    width: 40%;
-    height: 39vh;
+    width: 50%;
+    height: 49vh;
     overflow: hidden;
     border-radius: 0px 1000px 1000px 0px;
   }
@@ -676,6 +676,17 @@ flex-direction: column;
   }
   footer p{
       font-size: .75rem;
+  }
+  /* 會員區 */
+  #banner h1 {
+    font-size: 2.9rem;
+    margin-top: -3rem;
+    padding: 0.5rem 1rem 0.5rem 3rem;
+    border: 9px solid #F0B278;
+  }
+  #banner img {
+    width: 254px;
+    height: auto;
   }
 }
 @media (min-width:1441px){

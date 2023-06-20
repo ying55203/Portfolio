@@ -81,7 +81,7 @@
             </ul>
         </div>
         <!-- 兒童遊戲區 -->
-        <section id="kids">
+        <section id="kids" class="smoove">
             <div class="kids_box">
                 <div class="img_box">
                     <div class="img_title"></a><img src="./image/feature/kid/kidTitle.png" alt=""></div>
@@ -110,7 +110,7 @@
             </div>
         </section>
         <!-- 休憩交誼廳 -->
-        <section id="relax">
+        <section id="relax" class="smoove">
             <div class="relax_box">
                 <div class="img_box">
                     <div class="img_title"><img src="./image/feature/relax/relaxTitle.png" alt=""></div>
@@ -141,7 +141,7 @@
             </div>
         </section>
         <!-- 運動按摩室 -->
-        <section id="massage">
+        <section id="massage" class="smoove">
             <div class="massage_box">
                 <div class="img_box">
                     <div class="img_title"><img src="./image/feature/massage/massageTitle.png" alt=""></div>
@@ -167,7 +167,7 @@
             </div>
         </section>
         <!-- 重訓器材室 -->
-        <section id="equipmentRoom">
+        <section id="equipmentRoom" class="smoove">
             <div class="equipmentRoom_box">
                 <div class="img_box">
                     <div class="img_title"><img src="./image/feature/equipmentRoom/equipmentTitle.png" alt=""></div>
@@ -197,7 +197,7 @@
             </div>
         </section>
         <!-- 團體課教室 -->
-        <section id="groupRoom">
+        <section id="groupRoom" class="smoove">
             <div class="groupRoom_box">
                 <div class="img_box">
                     <div class="img_title"><img src="./image/feature/groupRoom/groupTitle.png" alt=""></div>
@@ -286,5 +286,14 @@
     <!-- lightbox js -->
     <script src="js/lightbox.min.js"></script>
     <script src="./JS/sticky_side.js"></script>
+    <!-- jQuery Smoove -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
+    <!-- activate jQuery Smoove -->
+    <script>
+        $('.smoove').smoove({
+            offset: '40%',
+            min_width: 0
+        });
+    </script>
 </body>
 </html>

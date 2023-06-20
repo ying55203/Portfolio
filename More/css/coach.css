@@ -67,6 +67,12 @@
 .coach_video a {
 	display: none;
 }
+.video_item .r_btn{
+    background-image: url(../image/icon/right_w.svg);
+    width: 12px;
+    height: 20px;
+    margin-left: 3rem;
+}
 .video_item a{
 	margin-top: 3rem;
 	letter-spacing: 0.2em;
@@ -79,11 +85,14 @@
 	font-weight: bold;
 	background-color: #C94344;
 	border-radius: 100px;
+	border: 2px solid #C94344;
 }
-.video_item a img{
-	flex: 1;
-	width: 9%;
-	margin-left: 5rem;
+.video_item a:hover{
+	background-color: #fff;
+	color: #C94344;
+}
+.video_item a:hover .r_btn{
+	background-image: url(../image/icon/right.svg);
 }
 .video_item p{
 	font-weight: 400;
@@ -133,7 +142,7 @@
 
 	position: fixed;
 	top: 20%;
-    left: 28%;
+    left: 31%;
 	z-index: 5;
 }
 .intro_t figure{
@@ -567,12 +576,12 @@ div{
 			height: 266px;
 		}
 		.yellowBlock{
-			width: 18%;
+			width: 25%;
 			left: -5%;
 		}
 		.orangeBlock {
 			width: 19%;
-			bottom: -10vh;
+    		bottom: -20vh;
 			right: 0;
 		}
 		/* 教練區 */

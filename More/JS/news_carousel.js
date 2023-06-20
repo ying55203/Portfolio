@@ -1,3 +1,4 @@
+// 圖片輪播
 var options = {
     accessibility: true,
     prevNextButtons: true,

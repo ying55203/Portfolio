@@ -27,6 +27,7 @@ img.orangeBlock{
     top: 440px;
     left: 200px;
     z-index: -1;
+    animation: block 2s ease-in;
 }
 img.pinkBlock{
     width: 200px;
@@ -35,6 +36,7 @@ img.pinkBlock{
     bottom: -220px;
     left: 60px;
     z-index: -1;
+    animation: block 2.5s ease-in;
 }
 img.yellowBlock{
     width: 730px;
@@ -43,6 +45,15 @@ img.yellowBlock{
     top: 300px;
     right: -350px;
     z-index: -1;
+    animation: block 2.5s ease-in;
+}
+@keyframes block{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 .news_title{
     margin-top: 100px;
@@ -214,22 +225,22 @@ hr{
         overflow: hidden;
     }
     img.yellowBlock {
-        width: 187px;
-        height: 176px!important;
+        width: 20%;
+        height: auto!important;
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 2vh;
+        right: 15%;
         z-index: -1;
     }
     img.orangeBlock{
         display: none;
     }
     img.pinkBlock{
-        width: 128px;
-        height: 138px!important;
+        width: 20%;
+        height: auto!important;
         position:absolute;
         bottom: 0;
-        left: 0;
+        left: 15%;
         z-index: -1;
     }
     .list_item figure{
@@ -241,7 +252,7 @@ hr{
         height: 35vh;
     }
     .text_box{
-        width: 77%;
+        width: 50%;
     }
     .list_item h4{
         font-size: 1.5rem;
@@ -258,6 +269,10 @@ hr{
     
 }
 @media (max-width:768px) {
+    img.logo {
+        width: 150px;
+        height: auto;
+    }
     img.yellowBlock {
         display: none;
     }
@@ -287,8 +302,8 @@ hr{
         margin: 0 20px;
     }
     .list_item img {
-        width: 90%;
-        height: 25vh;
+        width: 80%;
+        height: 30vh;
         filter: drop-shadow(8px 8px 0px #FFC42D);
     }
     .text_box {

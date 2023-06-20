@@ -1,5 +1,5 @@
 footer {
-    margin-top: -4vh;
+    margin-top: -7vh;
     background-image: url(../image/class/Footer-bg.png);
 	color: #621D1C;
 	padding: 4rem;
@@ -27,6 +27,7 @@ img.logo{
     width: 100%;
     position: relative;
     overflow: hidden;
+    margin-bottom: 8vh;
 }
 .orangeBlock{
 	position: absolute;
@@ -35,6 +36,7 @@ img.logo{
 	top: -10rem;
 	right: 0;
 	z-index: 3;
+    opacity: 0;
 }
 .pinkBlock{
 	position: absolute;
@@ -43,6 +45,7 @@ img.logo{
 	top: 5rem;
 	left: -3rem;
 	z-index: 3;
+    opacity: 0;
 }
 .class_icon{
 	width: 8%;
@@ -58,7 +61,7 @@ img.logo{
 }
 .intro_title{
     width: 50%;
-    z-index: 1;
+    z-index: 3;
 }
 figure.intro_img{
     margin-top: -2rem;
@@ -66,6 +69,7 @@ figure.intro_img{
     height: 22vh;
     border-radius: 20px;
     overflow: hidden;
+    z-index: 2;
 }
 .intro_img img{
     object-fit: cover;
@@ -86,6 +90,7 @@ figure.intro_img{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    z-index: 2;
 }
 .content{
     margin-top: 3rem;
@@ -142,6 +147,11 @@ figure.intro_img{
     background-image: url(../image/home/right_btn_y.svg);
 }
 /* 分類介紹 */
+#classification_group,
+#classification_personal,
+#classification_parentChild{
+    width: 100%;
+}
 /* 團體課-瑜珈 */
 #group_yoga,
 #group_aerobic{
@@ -154,16 +164,17 @@ figure.intro_img{
     z-index: -1;
     margin-top: 5rem;
     display: none;
+    justify-content: center;
 }
 #personal_pugilism{
     position: relative;
-    width: 108%;
+    width: 100%;
     background-image: url(../image/class/class-bg.jpg);
     background-size:100% 100%;
-    height: 140vh;
+    height: 130vh;
     z-index: -1;
-    margin-bottom: -5rem;
     display: none;
+    justify-content: center;
 }
 #personal_freeRetrain,
 #personal_retrain,
@@ -174,11 +185,11 @@ figure.intro_img{
     width: 100%;
     background-image: url(../image/class/class-bg.jpg);
     background-size:100% 100%;
-    height: 90vh;
+    height: 80vh;
+    padding-bottom: 5vh;
     z-index: -1;
-    padding-top: 2rem;
-    margin-top: 3rem;
     display: none;
+    justify-content: center;
 }
 #group_retrain,
 #parentChild_yoga,
@@ -188,10 +199,10 @@ figure.intro_img{
     width: 100%;
     background-image: url(../image/class/class-bg.jpg);
     background-size:100% 100%;
-    height: 90vh;
+    height: 100vh;
     z-index: -1;
-    margin-top: 5rem;
     display: none;
+    justify-content: center;
 }
 .item_box_0,
 .item_box{
@@ -211,7 +222,7 @@ figure.intro_img{
 }
 .item_box_0 img,
 .item_box img{
-    width: 480px;
+    width: 75%;
     height: auto;
 }
 .item_box{
@@ -252,12 +263,13 @@ span.title_1{
 }
 .text_item p{
     margin-top: 3rem;
-    width: 70%;
+    width: 80%;
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 200%;
     letter-spacing: 0.05em;
     color: #212121;
+    text-align:justify;/* 齊行 */
 }
 p.pugilism_p{
     margin-top: 1rem;
@@ -399,7 +411,9 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
         font-size: 1.125rem;
     }
     #personal_pugilism{
-        height: 110vh;
+        height: 100vh;
+        background-size: 140% 100%;
+        margin-bottom: -7vh;
     }
     #group_yoga, #group_aerobic{
         margin-bottom: -20vh;
@@ -409,7 +423,14 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
         margin-bottom: -15vh;
     }
     #group_retrain, #parentChild_yoga, #parentChild_dance, #parentChild_tabletennis{
-        margin-bottom: -10vh;
+        margin-bottom: -7vh;
+    }
+    .item_box_0 img, .item_box img{
+        width: 80%;
+    }
+    .text_item p{
+        width: 90%;
+        margin-left: 3rem;
     }
 }
 @media (min-width:1441px){
@@ -496,11 +517,12 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
         padding: 1rem 1.8rem;
         margin: 0 auto;
     }
+    /* 課程內容區 */
     #banner{
         height: 80vh;
     }
     .class_banner img{
-        width: 70%;
+        width: 500px;
     }
     .class_icon {
         width: 12%;
@@ -508,7 +530,6 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
     }
     .intro_title {
         width: 45%;
-        z-index: 1;
     }
     .class_item {
         margin: 3rem;
@@ -529,11 +550,36 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
         font-weight: 150;
         font-size: 1em;
     }
+    figure.intro_img {
+        width: 80%;
+        height: 30vh;
+    }
+    .pinkBlock{
+        width: 45%;
+        height: auto;
+        top: 50vh;
+        left: 10%;
+        z-index: 1;
+    }
+    .orangeBlock{
+        width: 30%;
+        z-index: 1;
+    }
+    .content {
+        width: 32%;
+        justify-content: space-around;
+    }
     .content p{
         font-size: 1.25rem;
     }
+    .item_box_0, .item_box{
+        margin-top: 0;
+    }
+    .item_box_0{
+        margin-bottom: 2rem;
+    }
     .item_box_0 img, .item_box img {
-        width: 230px;
+        width: 90%;
         height: auto;
     }
     .text_icon img {
@@ -548,13 +594,21 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
     }
     .text_item p{
         font-size: 0.875rem;
+        width: 85%;
+        margin: 1rem 1rem 1rem 3rem;
+    }
+    .item_box .text_item p{
+        margin-right: 3rem;
     }
     #group_yoga,
     #group_aerobic{
-        height: 110vh;
+        height: 130vh;
+        background-size: 150% 100%;
     }
     #personal_pugilism{
-        height: 120vh;
+        height: 100vh;
+        background-size: 130% 100%;
+        margin-bottom: -1vh;
     }
     #personal_freeRetrain,
     #personal_retrain,
@@ -562,12 +616,14 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
     #kids_badminton,
     #kids_yoga{
         height: 85vh;
+        background-size: 130% 100%;
     }
     #group_retrain,
     #parentChild_yoga,
     #parentChild_dance,
     #parentChild_tabletennis{
-        height: 100vh;
+        height: 80vh;
+        background-size: 130% 100%;
     }
     /* footer */
     footer{
@@ -753,10 +809,10 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
     }
     .pinkBlock {
         position: absolute;
-        width: 100%;
+        width: 80%;
         height: auto;
         top: 52vh;
-        left: 30%;
+        left: 4%;
         z-index: 1;
     }
     #tabs span{
@@ -769,27 +825,24 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
         font-size: 0.875rem;
     }
     .intro_title {
-        width: 75%;
-        z-index: 3;
+        width: 60%;
     }
     .class_item {
         margin: 3rem 0;
     }
     figure.intro_img {
-        width: 90%;
+        width: 85%;
         height: 23vh;
         border: 5px solid #FFFFFF;
-        z-index: 2;
     }
     .class_intro p{
         width: 80%;
         font-size: 1.06rem;
         line-height: 200%;
-        z-index: 2;
     }
     .content{
         margin-top: 1.5rem;
-        width: 35%;
+        width: 41%;
         padding-bottom: 0.5rem;
         z-index: 2;
     }
@@ -806,13 +859,64 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
         background-repeat: no-repeat;
         background-image: url(../image/rwd390/right_btn.png);
     }
+    footer{
+        margin-top: 1vh;
+    }
+    .orangeBlock{
+        width: 40%;
+    }
+    #personal_pugilism{
+        height: 150vh;
+        background-size: 140% 100%;
+        margin-bottom: -7vh;
+    }
     #group_yoga, #group_aerobic{
+        height: 160vh;
+        background-size: 250% 100%;
+    }
+    #personal_freeRetrain, #personal_retrain, #kids_gymnastics, #kids_badminton, #kids_yoga{
+        height: 120vh;
+    }
+    #group_retrain, #parentChild_yoga, #parentChild_dance, #parentChild_tabletennis{
+        height: 100vh;
         background-size: 200% 100%;
     }
-    .item_box_0, .item_box{
+    .item_box{
         flex-direction: column;
+        width: 80%;
+    }
+    .item_box_0{
+        width: 80%;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        flex-direction: column-reverse;
+    }
+    .item_box_0 img, .item_box img {
+        width: 80%;
+        height: auto;
+    }
+    .text_icon img{
+        width: 75%;
+        height: auto;
     }
     .text_title h3 {
-        font-size: 2.125rem;
+        font-size: 1.81rem;
+    }
+    .text_title span {
+        font-size: 1rem;
+    }
+    .text_item {
+        width: 80%;
+        margin-bottom: 1.5rem;
+    }
+    .text_item p {
+        font-size: 1.06rem;
+        width: 100%;
+        margin: .5rem;
+        margin-left: 3rem;
+    }
+    .item_box .text_item p {
+        margin: .5rem;
+        margin-left: 3rem;
     }
 }
