@@ -56,6 +56,13 @@ $(document).ready(function () {
           $('.orangeBlock').stop().fadeOut('fast');
         }
       });
+      $(window).scroll(function(){
+        if($(this).scrollTop() > ($('#banner').offset().top + 500)){
+          $('.orangeBlock').stop().fadeTo('normal',1);
+        }else{
+          $('.orangeBlock').stop().fadeOut('fast');
+        }
+      });
 });
         // 教練點開頁面顯示
 
