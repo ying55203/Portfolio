@@ -200,7 +200,7 @@ nav{
     text-decoration: none;
     font-weight: bold;
     color:#424242;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 0.8rem;
 }
 .menu a:hover{
 	color: #C94344;
@@ -238,7 +238,7 @@ nav{
 /* 頁尾區 */
 footer {
     margin-top: 10vh;
-    background-image: url(/image/Footer-bg.jpg);
+    background-image: url(../image/Footer-bg.jpg);
 	color: #621D1C;
 	padding: 4rem;
 	/* 內距會包含背景 */
@@ -879,15 +879,62 @@ figure.res_p{
 .res_text a:hover .r_btn{
     background-image: url(../image/home/right.svg);
 }
-@media (min-width:769px){
+@media (max-width:1919px) {
+    /* 導覽列 */
+    nav{
+        font-size: 1rem;
+    }
+    .logoMore img{
+        width: 90%;
+    }
+    .reserve_btn a {
+        padding: 0.8rem 1.5rem;
+    }
+    /* footer */
+    footer{
+        margin-top: 2vh;
+    }
+    .footer_reserve_btn{
+        margin-bottom: 1rem;
+    }
+    .footer_reserve_btn img {
+        width: 17%;
+    }
+    .footer_reserve_btn a{
+        font-size: 1rem;
+        padding: 0.7rem 1.6rem;
+    }
+    .footer_reserve_btn .r_btn{
+        margin-left: 2rem;
+        margin-top: 2px;
+    }
+    h2.footer_title {
+        font-size: 1rem;
+    }
+    .menu_title p {
+        font-size: 0.875rem;
+    }
+    .map{
+        font-size: 1rem;
+    }
+    .map a {
+        font-size: 0.6875rem;
+        padding: .4rem .7rem;
+    }
+    footer p{
+        font-size: .75rem;
+    }
+}
+@media (min-width:1441px){
 	.hamburger {
 		display: none;
 	}
 }
-@media (max-width:768px) {
+@media (max-width:1440px) {
     #topbar{
         justify-content: space-between;
         background: rgba(255, 255, 255,0.8);
+        padding: 0.7rem;
     }
 	#topbar ul {
 		justify-content: center;
@@ -897,6 +944,8 @@ figure.res_p{
     }
     img.logo{
         display: flex;
+        width: 155px;
+        height: auto;
     }
 	/* 漢堡按鈕  */
 	.hamburger {
@@ -914,7 +963,8 @@ figure.res_p{
 		display: block;/* 修改span行內元素為區塊 */
 		width: 25px;
 		height: 3px;
-		margin: 5px 15px;
+		margin: 6px 15px;
+        border-radius: 20px;
 		background-color: #FFFFFF;
 		transition: all 0.3s ease-in-out;
 	}
@@ -924,11 +974,11 @@ figure.res_p{
 	}
 
 	.hamburger.is-active .bar:nth-child(1) {
-		transform: translateY(8px) rotate(45deg);
+		transform: translateY(9px) rotate(45deg);
 	}
 
 	.hamburger.is-active .bar:nth-child(3) {
-		transform: translateY(-8px) rotate(-45deg);
+		transform: translateY(-9px) rotate(-45deg);
 	}
     ul.morelogo{
         width: 0%;
@@ -939,12 +989,12 @@ figure.res_p{
 	.navigation {
 		display: none;
 		position: absolute;
-		top: 80px;
+		top: 95px;
 		right: 0;
-		padding: 0 10px;
+		padding: 0 20px;
 		border-radius: 5px;
-
-		background-color: rgb(255, 255, 255,0.5);
+        font-size: 1.5rem;
+		background-color: rgb(255, 255, 255,0.8);
 		backdrop-filter: blur(5px);
 		animation: navigation 0.35s both;
 	}
@@ -967,7 +1017,7 @@ figure.res_p{
         flex-direction: column;
     }
     .footer_reserve_btn img {
-        width: 35%;
+        width: 30%;
     }
     .footer_reserve_btn a{
         font-size: 1.06rem;
@@ -1020,7 +1070,7 @@ figure.res_p{
 		padding: 15px 10px;
 	}
 }
-@media (max-width:390px) {
+@media (max-width:768px) {
     /* top按鈕 */
     #fixedTop {
         bottom: 1rem;
@@ -1031,16 +1081,18 @@ figure.res_p{
         padding: 0.2rem;
     }
     img.logo {
-        width: 40%;
+        width: 133px;
+        height: auto;
     }
     .hamburger {
-        padding: 0.1rem 0.2rem;
+        padding: 0.1rem 0.5rem;
         margin: 0.5rem;
     }
     .bar {
-        width: 14px;
+        width: 20px;
         height: 2px;
         margin: 4px 10px;
+        border-radius: 20px;
     }
     .hamburger.is-active .bar:nth-child(1) {
 		transform: translateY(6px) rotate(45deg);
@@ -1053,13 +1105,16 @@ figure.res_p{
         width: 0%;
     }
     .navigation{
-        top: 69px;
+        top: 68px;
         right: 0;
         padding: 10px 45px;
         border-radius: 25px;
+        background-color: rgb(255, 255, 255,0.9);
+        width: 100%;
+        font-size: 1.5rem;
     }
     .reserve_btn{
-        margin-left: 3rem;
+        margin-left: 0;
     }
     #fixedTop img {
         width: 25px;
@@ -1080,6 +1135,12 @@ figure.res_p{
     }
     .footer_reserve_btn {
         margin-bottom: 1rem;
+    }
+    .footer_reserve_btn .r_btn{
+        background-image: url(../image/rwd390/right_w.png);
+        width: 7px;
+        height: 12px;
+        margin-left: 2rem;
     }
     .footer_icon a {
         width: 32px;

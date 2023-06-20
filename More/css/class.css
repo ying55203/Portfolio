@@ -1,6 +1,6 @@
 footer {
     margin-top: -4vh;
-    background-image: url(/image/class/Footer-bg.png);
+    background-image: url(../image/class/Footer-bg.png);
 	color: #621D1C;
 	padding: 4rem;
 	/* 內距會包含背景 */
@@ -14,11 +14,14 @@ img.logo{
 /* 課程種類banner */
 #banner{
     width: 100%;
-    background-image: url(/image/class/Banner-bg.jpg);
+    background-image: url(../image/class/Banner-bg.jpg);
     background-size:cover;
     background-position: bottom;
     height: 100vh;
     z-index: -2;
+}
+.class_banner390{
+    display: none;
 }
 #class_container{
     width: 100%;
@@ -144,7 +147,7 @@ figure.intro_img{
 #group_aerobic{
     position: relative;
     width: 100%;
-    background-image: url(/image/class/class-bg.jpg);
+    background-image: url(../image/class/class-bg.jpg);
     background-size:100% 100%;
     background-position:center;
     height: 150vh;
@@ -155,7 +158,7 @@ figure.intro_img{
 #personal_pugilism{
     position: relative;
     width: 108%;
-    background-image: url(/image/class/class-bg.jpg);
+    background-image: url(../image/class/class-bg.jpg);
     background-size:100% 100%;
     height: 140vh;
     z-index: -1;
@@ -169,7 +172,7 @@ figure.intro_img{
 #kids_yoga{
     position: relative;
     width: 100%;
-    background-image: url(/image/class/class-bg.jpg);
+    background-image: url(../image/class/class-bg.jpg);
     background-size:100% 100%;
     height: 90vh;
     z-index: -1;
@@ -183,7 +186,7 @@ figure.intro_img{
 #parentChild_tabletennis{
     position: relative;
     width: 100%;
-    background-image: url(/image/class/class-bg.jpg);
+    background-image: url(../image/class/class-bg.jpg);
     background-size:100% 100%;
     height: 90vh;
     z-index: -1;
@@ -332,16 +335,93 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
 .ui-widget.ui-widget-content{/* #tabs外框樣式*/
     border: none;
 }
-
-@media (min-width:769px){
+@media (max-width:1919px) {
+    /* 導覽列 */
+    nav{
+        font-size: 1rem;
+    }
+    .logoMore img{
+        width: 90%;
+    }
+    .reserve_btn a {
+        padding: 0.8rem 1.5rem;
+    }
+    /* footer */
+    footer{
+        margin-top: 2vh;
+    }
+    .footer_reserve_btn{
+        margin-bottom: 1rem;
+    }
+    .footer_reserve_btn img {
+        width: 17%;
+    }
+    .footer_reserve_btn a{
+        font-size: 1rem;
+        padding: 0.7rem 1.6rem;
+    }
+    .footer_reserve_btn .r_btn{
+        margin-left: 2rem;
+        margin-top: 2px;
+    }
+    h2.footer_title {
+        font-size: 1rem;
+    }
+    .menu_title p {
+        font-size: 0.875rem;
+    }
+    .map{
+        font-size: 1rem;
+    }
+    .map a {
+        font-size: 0.6875rem;
+        padding: .4rem .7rem;
+    }
+    footer p{
+        font-size: .75rem;
+    }
+    a.ui-tabs-anchor{
+        font-size: 1.68rem;
+    }
+    .class_banner img{
+        width: 80%;
+    }
+    .content {
+        width: 40%;
+    }
+    figure.intro_img{
+        width: 80%;
+    }
+    .intro_title{
+        width: 60%;
+    }
+    .content p{
+        font-size: 1.125rem;
+    }
+    #personal_pugilism{
+        height: 110vh;
+    }
+    #group_yoga, #group_aerobic{
+        margin-bottom: -20vh;
+    }
+    #personal_freeRetrain, #personal_retrain, #kids_gymnastics, #kids_badminton, #kids_yoga{
+        margin-top: 10vh;
+        margin-bottom: -15vh;
+    }
+    #group_retrain, #parentChild_yoga, #parentChild_dance, #parentChild_tabletennis{
+        margin-bottom: -10vh;
+    }
+}
+@media (min-width:1441px){
 	.hamburger {
 		display: none;
 	}
 }
-@media (max-width:768px) {
+@media (max-width:1440px) {
     #topbar{
         justify-content: space-between;
         background: rgba(255, 255, 255,0.8);
+        padding: 0.7rem;
     }
 	#topbar ul {
 		justify-content: center;
@@ -351,6 +431,8 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
     }
     img.logo{
         display: flex;
+        width: 155px;
+        height: auto;
     }
 	/* 漢堡按鈕  */
 	.hamburger {
@@ -368,7 +450,8 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
 		display: block;/* 修改span行內元素為區塊 */
 		width: 25px;
 		height: 3px;
-		margin: 5px 15px;
+		margin: 6px 15px;
+        border-radius: 20px;
 		background-color: #FFFFFF;
 		transition: all 0.3s ease-in-out;
 	}
@@ -393,20 +476,28 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
 	.navigation {
 		display: none;
 		position: absolute;
-		top: 80px;
+		top: 95px;
 		right: 0;
-		padding: 0 10px;
+		padding: 0 20px;
 		border-radius: 5px;
-
+        font-size: 1.5rem;
 		background-color: rgb(255, 255, 255,0.5);
 		backdrop-filter: blur(5px);
 		animation: navigation 0.35s both;
 	}
+    .menu{
+        padding: 2rem 0;
+    }
+    .reserve_btn {
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+    .reserve_btn a{
+        padding: 1rem 1.8rem;
+        margin: 0 auto;
+    }
     #banner{
         height: 80vh;
-    }
-    footer{
-        margin-top: -5vh;
     }
     .class_banner img{
         width: 70%;
@@ -479,6 +570,9 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
         height: 100vh;
     }
     /* footer */
+    footer{
+        margin-top: -5vh;
+    }
     #fixedTop{
         bottom: 4rem;
         right: 2rem
@@ -547,7 +641,7 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
 		padding: 15px 10px;
 	}
 }
-@media (max-width:390px) {
+@media (max-width:768px) {
     /* top按鈕 */
     #fixedTop {
         bottom: 1rem;
@@ -558,7 +652,8 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
         padding: 0.2rem;
     }
     img.logo {
-        width: 40%;
+        width: 133px;
+        height: auto;
     }
     .hamburger {
         padding: 0.1rem 0.2rem;
@@ -620,7 +715,7 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
         height: 32px;
     }
     .icon-fb {
-        background-image: url(./image/rwd390/fb.png);
+        background-image: url(../image/rwd390/fb.png);
     }
     .icon-ig {
         background-image: url(../image/rwd390/ig.png);
@@ -644,5 +739,80 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
         color: #616161;
         background-color: #FFF0CA;
         font-size: 0.75rem;
+    }
+    /* 課程種類頁面 */
+    #banner{
+        height: 50vh;
+    }
+    .class_banner{
+        display: none;
+    }
+    .class_banner390{
+        display: block;
+        width: 70%;
+    }
+    .pinkBlock {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 52vh;
+        left: 30%;
+        z-index: 1;
+    }
+    #tabs span{
+        display: none;
+    }
+    .ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+        margin: 0 1rem 2rem 1rem;
+    }
+    a.ui-tabs-anchor{
+        font-size: 0.875rem;
+    }
+    .intro_title {
+        width: 75%;
+        z-index: 3;
+    }
+    .class_item {
+        margin: 3rem 0;
+    }
+    figure.intro_img {
+        width: 90%;
+        height: 23vh;
+        border: 5px solid #FFFFFF;
+        z-index: 2;
+    }
+    .class_intro p{
+        width: 80%;
+        font-size: 1.06rem;
+        line-height: 200%;
+        z-index: 2;
+    }
+    .content{
+        margin-top: 1.5rem;
+        width: 35%;
+        padding-bottom: 0.5rem;
+        z-index: 2;
+    }
+    .content p{
+        width: 100%;
+    }
+    .content:hover .btnImg {
+        background-image: url(../image/rwd390/right_btn.png);
+    }
+    .content .btnImg {
+        width: 30px;
+        height: 20px;
+        margin-left: 0.5rem;
+        background-repeat: no-repeat;
+        background-image: url(../image/rwd390/right_btn.png);
+    }
+    #group_yoga, #group_aerobic{
+        background-size: 200% 100%;
+    }
+    .item_box_0, .item_box{
+        flex-direction: column;
+    }
+    .text_title h3 {
+        font-size: 2.125rem;
     }
 }

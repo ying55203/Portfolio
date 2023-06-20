@@ -1,11 +1,8 @@
-img.logo{
-    width: 22%;
-}
 /* 教練介紹banner */
 #banner{
 	width: 100%;
 	height: 100vh;
-	background-image: url(/image/coach/coachBanner-bg.jpg);
+	background-image: url(../image/coach/coachBanner-bg.jpg);
 	background-size:cover;
 	background-position:bottom;
 	padding-top: 5rem;
@@ -25,6 +22,7 @@ img.logo{
 	top: 20vh;
 	left: 8%;
 	z-index: 1;
+	opacity: 0;
 }
 .orangeBlock{
 	position: absolute;
@@ -33,6 +31,7 @@ img.logo{
 	bottom: -20vh;
 	right: 1rem;
 	z-index: 1;
+	opacity: 0;
 }
 .video_title{
 	margin-top: 80px;
@@ -215,7 +214,7 @@ img.closeBtn{
 	padding-top: 6rem;
 	padding-bottom: 100px;
 	width: 100%;
-	background-image: url(/image/coach/coachintro-bg.jpg);
+	background-image: url(../image/coach/coachintro-bg.jpg);
 	background-size:auto 100%;
 	background-position:center;
 }
@@ -468,11 +467,62 @@ div{
 	.widget__drop p{
 		padding: 0 30px;
 	}
-
-	@media (max-width:768px) {
-		img.logo {
-			width: 22%;
+	@media (max-width:1919px) {
+		.slide img {
+			width: 600px;
 		}
+		.video_title h2{
+			font-size: 3rem;
+		}
+		.video_title p{
+			font-size: 2.06rem;
+		}
+		.video_item p,
+		.video_item a{
+			font-size: 1.125rem;
+		}
+		.coach_video iframe{
+			width: 450px;
+			height: 250px;
+		}
+		.video_item a{
+			padding: 1rem 2rem 1rem 3rem;
+		}
+		.video_item a img{
+			margin-left: 3rem;
+		}
+		.intro_title h4,
+		.faq_title h4{
+			font-size: 1.25rem;
+		}
+		.intro_title h5,
+		.faq_title h5{
+			font-size: 2.25rem;
+		}
+		.list_box{
+			width: 80%;
+			margin-top: 0.5rem;
+		}
+		#teacher_1, #teacher_2, #teacher_3, #teacher_4, #teacher_5, #teacher_6, #teacher_7, #teacher_8, #teacher_9, #teacher_10, #teacher_11, #teacher_12{
+			padding: 1rem;
+			padding-bottom: 4rem;
+			left: 26%;
+		}
+		.intro_t figure {
+			width: 35%;
+			margin: 0px 3rem 0 3rem;
+		}
+		.item_t img {
+			width: 65%;
+		}
+		img.closeBtn {
+			width: 10%;
+		}
+		.wbox {
+			width: 90%;
+		}
+	}
+	@media (max-width:1440px) {
 		#banner{
 			height: 50vh;
 		}
@@ -666,7 +716,7 @@ div{
 		#teacher_1, #teacher_2, #teacher_3, #teacher_4, #teacher_5, #teacher_6, #teacher_7, #teacher_8, #teacher_9, #teacher_10, #teacher_11, #teacher_12{
 			padding: 1rem;
 			top: 25%;
-			left: 20%;
+			left: 30%;
 		}
 		.t_box figure img {
 			margin: 1rem 1rem 1rem 2rem;
@@ -728,9 +778,10 @@ div{
 			padding: 0 10px;
 		}
 	}
-@media (max-width: 390px){
+@media (max-width: 768px){
 	img.logo {
-		width: 40%;
+		width: 150px;
+		height: auto;
 	}
 	/* 影片介紹區 */
     .slider .slide-track{
@@ -793,8 +844,14 @@ div{
         margin-left: 5rem;
     }
     /* 教練介紹區 */
+	.hero-slider .carousel-cell .inner{
+		top: 30%;
+	}
+	.flickity-prev-next-button{
+		top: 42%;
+	}
     #coach_intro {
-        height: 170vh;
+        height: 150vh;
         justify-content: flex-start;
     }
     .coach_intro_title {
@@ -813,7 +870,7 @@ div{
     }
     .hero-slider .flickity-page-dots {
         display: block;
-        margin-bottom: 170px;
+        margin-bottom: 620px;
 	}
     .flickity-viewport {
         width: 100%;

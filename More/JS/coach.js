@@ -46,7 +46,16 @@ $(document).ready(function () {
         $(this).toggleClass('is-active');
         $('.navigation').toggleClass('show');
     });
-    
+    // 色塊淡入
+    $(window).scroll(function(){
+        if($(this).scrollTop() > $('#banner').offset().top){
+          $('.yellowBlock').stop().fadeTo('normal',1);
+          $('.orangeBlock').stop().fadeTo('normal',1);
+        }else{
+          $('.yellowBlock').stop().fadeOut('fast');
+          $('.orangeBlock').stop().fadeOut('fast');
+        }
+      });
 });
         // 教練點開頁面顯示
 

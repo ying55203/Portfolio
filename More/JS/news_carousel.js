@@ -29,3 +29,25 @@ $('.hamburger').click(function () {
     $(this).toggleClass('is-active');
     $('.navigation').toggleClass('show');
 });
+// 色塊淡入
+  $(window).scroll(function(){
+    if($(this).scrollTop() > $('#banner').offset().top){
+      $('.yellowBlock').stop().fadeTo('normal',1);
+    }else{
+      $('.yellowBlock').stop().fadeOut('fast');
+    }
+  });
+  $(window).scroll(function(){
+    if($(this).scrollTop() > $('#news').offset().top){
+      $('.orangeBlock').stop().fadeTo('normal',1);
+    }else{
+      $('.orangeBlock').stop().fadeOut('fast');
+    }
+  });
+  $(window).scroll(function(){
+    if($(this).scrollTop() > ($('#button').offset().top - 1200)){
+      $('.pinkBlock').stop().fadeTo('normal',1);
+    }else{
+      $('.pinkBlock').stop().fadeOut('fast');
+    }
+  });

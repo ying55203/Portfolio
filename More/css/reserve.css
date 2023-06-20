@@ -1,6 +1,6 @@
 #reserve_bg{
     width: 100%;
-    background-image: url(/image/reserve/reserve-bg.jpg);
+    background-image: url(../image/reserve/reserve-bg.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center bottom;
@@ -156,13 +156,45 @@ small{
     margin-left: 20px;
 }
 footer {
-    background-image: url(./image/reserve/Footer.jpg);
+    background-image: url(../image/reserve/Footer.jpg);
     width: 100%;
 }
-@media (max-width:768px) {
-    img.logo {
-        width: 22%;
+@media (max-width:1919px) {
+    #reserve_bg{
+        height: 110vh;
     }
+    h2.reserve_title{
+        font-size: 4.625rem;
+    }
+    .logo_box {
+        width: 72%;
+    }
+    img.freepic {
+        width: 91.54px;
+        height: auto;
+    }
+    #reserve_pic{
+        margin-bottom: 10vh;
+    }
+    #reserve_pic p {
+        font-size: .9rem;
+    }
+    img.logopic {
+        width: 16.5%;
+        height: auto;
+        margin-bottom: -3.5vh;
+        margin-left: 13rem;
+    }
+    #reserve_from .button{
+        padding: 16px 50px
+    }
+    .button img {
+        width: 12px;
+        height: 25px;
+        margin-left: 50px;
+    }
+}
+@media (max-width:1440px) {
     #topbar button{
         margin-top: 0;
     }
@@ -220,5 +252,63 @@ footer {
         width: 20px;
         height: 20px;
         margin-left: 15px;
+    }
+}
+@media (max-width:768px) {
+    #reserve_bg{
+        height: 50vh;
+        margin-bottom: 100vh;
+    }
+    .logo_box {
+        width: 75%;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    img.logopic {
+        margin: 0;
+        width: 65.53px;
+        height: 65.53px;
+    }
+    img.freepic {
+        width: 72.36px;
+        height: 60.49px;
+        margin: -75px 10px 0 0;
+    }
+    h2.reserve_title {
+        font-size: 3.125rem;
+    }
+    p.reserve_p1 {
+        display: none;
+    }
+    #reserve_pic p.reserve_p2 {
+        display: block;
+        font-size: .8rem;
+    }
+    .message_box {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+    }
+    input#username, input#tel, input#email{
+        width: 145%;
+    }
+    #time{
+        width: 310%;
+    }
+    #reserve_from{
+        margin-top: 15vh;
+    }
+    .text_box label{
+        margin-bottom: .5rem;
+    }
+    .label_option {
+        font-size: .9rem;
+    }
+    input[type="radio" i] {
+        width: 17px;
+        height: 17px;
+    }
+    footer {
+        background-image: url(../image/Footer-bg.jpg);
     }
 }
