@@ -194,7 +194,7 @@ footer {
         margin-left: 50px;
     }
 }
-@media (max-width:1440px) {
+@media (max-width:1439px) {
     #topbar button{
         margin-top: 0;
     }
@@ -254,7 +254,7 @@ footer {
         margin-left: 15px;
     }
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
     #reserve_bg{
         height: 50vh;
         margin-bottom: 100vh;

@@ -925,13 +925,157 @@ figure.res_p{
     footer p{
         font-size: .75rem;
     }
+    /* 首頁 */
+    #banner{
+        height: 80vh;
+    }
+    .banner_item{
+        margin-top: -5rem;
+    }
+    .banner_item h1{
+        font-size: 5rem;
+    }
+    .banner_item h2{
+        font-size: 3.68rem;
+    }
+    .banner_item p{
+        font-size: 1.68rem;
+    }
+    .jumpBtn p{
+        font-size: 1.125rem;
+    }
+    img.cloud_png{
+        width: 890px;
+        height: auto;
+    }
+    img.fitness_gif{
+        width: 339px;
+        right: 28%;
+    }
+    img.cafe_png{
+        width: 187px;
+        left: 10rem;
+    }
+    img.sleep_png{
+        width: 173px;
+        top: 20vh;
+        right: 20rem;
+    }
+    img.play_png{
+        width: 152px;
+        right: 10rem;
+    }
+    /* about */
+    #about {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../image/home/about_bg.png);
+        background-size: 110% 90%;
+        background-position: center;
+        margin:0;
+    }
+    img.about01_p{
+        width: 218px;
+        left: 27%;
+        top: 7vh;
+    }
+    img.about02_p{
+        width: 282px;
+        left: -2%;
+        bottom: 20vh;
+    }
+    img.about03_p{
+        width: 304px;
+        right: -2%;
+        bottom: 5vh;
+    }
+    #about img.sleep_gif{
+        width: 196px;
+        top: 11vh;
+    }
+    #about .item_title img{
+        width: 85px;
+    }
+    .title_text p{
+        font-size: 2.25rem;
+        line-height: 180%;
+    }
+    span.about_span,span.feature_span{
+        font-size: 1.25rem;
+        color: #F88D8E;
+        line-height: 180%;
+        letter-spacing: 0.05em;
+    }
+    .text p{
+        font-size: 1.06rem;
+    }
+    /* feature */
+    .item_title img{
+        width: 85px;
+    }
+    .feature_title{
+        width: 224px;
+    }
+    .feature_item figure{
+        width: 250px;
+    }
+    img.feature_play{
+        width: 81px;
+        left: 3rem;
+        top: 42%;
+    }
+    img.feature_tea{
+        width: 101px;
+        left: 3rem;
+        top: 40%;
+    }
+    img.feature_sleep{
+        width: 150px;
+        left: 3rem;
+        top: 37%;
+    }
+    .feature_text p{
+        font-size: 1rem;
+    }
+    .feature_text {
+        width: 60%;
+        margin-top: 2rem;
+    }
+    .feature_text p{
+        text-align: left;
+    }
+    /* course */
+    .course_span{
+        font-size: 1.25rem;
+        line-height: 180%;
+    }
+    .res_text h2{
+        font-size: 2.2rem;
+    }
+    #course .res {
+        height: 70vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    .res_text p{
+        font-size: 1.1rem;
+        margin: 1rem 2rem 2rem 2rem;
+    }
+    .res_text a{
+        font-size: 1rem;
+        padding: 0.8rem 2rem 0.8rem 5rem;
+    }
+    .res_text h2::before{
+        width: 12rem;
+        left: -1.2rem;
+    }
 }
-@media (min-width:1441px){
+@media (min-width:1440px){
 	.hamburger {
 		display: none;
 	}
 }
-@media (max-width:1440px) {
+@media (max-width:1439px) {
     #topbar{
         justify-content: space-between;
         background: rgba(255, 255, 255,0.8);
@@ -1071,7 +1215,7 @@ figure.res_p{
 		padding: 15px 10px;
 	}
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
     /* top按鈕 */
     #fixedTop {
         bottom: 1rem;

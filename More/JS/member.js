@@ -22,21 +22,13 @@ $(function(){
             fixedTop.fadeOut('fast');
         }
     });
-    //---漢堡按鈕---
-    $('.hamburger').click(function () {
-        $(this).toggleClass('is-active');
-        $('.navigation').toggleClass('show');
-    });
     
 });
 // 計數器
 // 啟動
 $('.counter').countUp();
-// $('.counter').countUp({
-//     delay: 1000,
-//     time: 1000
-// }); 
-// 圖片輪播
+
+// 會員圖片輪播
 var options = {
     accessibility: true,
     prevNextButtons: true,
@@ -70,23 +62,30 @@ $('.hamburger').click(function () {
 });
 // 色塊淡入
   $(window).scroll(function(){
-    if($(this).scrollTop() > $('#banner').offset().top){
+    if($(this).scrollTop() > $('#banner').offset().top + 200){
       $('.yellowBlock').stop().fadeTo('normal',1);
     }else{
       $('.yellowBlock').stop().fadeOut('fast');
     }
   });
   $(window).scroll(function(){
-    if($(this).scrollTop() > $('#news').offset().top){
+    if($(this).scrollTop() > $('#count').offset().top + 200){
       $('.orangeBlock').stop().fadeTo('normal',1);
     }else{
       $('.orangeBlock').stop().fadeOut('fast');
     }
   });
   $(window).scroll(function(){
-    if($(this).scrollTop() > ($('#button').offset().top - 1200)){
+    if($(this).scrollTop() > ($('#banner').offset().top)){
       $('.pinkBlock').stop().fadeTo('normal',1);
     }else{
       $('.pinkBlock').stop().fadeOut('fast');
+    }
+  });
+  $(window).scroll(function(){
+    if($(this).scrollTop() > ($('#experience').offset().top)){
+      $('.yellowBlock2').stop().fadeTo('normal',1);
+    }else{
+      $('.yellowBlock2').stop().fadeOut('fast');
     }
   });

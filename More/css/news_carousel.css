@@ -763,13 +763,13 @@ footer > div{
         margin-right: 13px;
     }
 }
-@media (min-width:1441px){
+@media (min-width:1440px){
 	.hamburger {
 		display: none;
 	}
 }
 /* RWD:768-1440 */
-@media (max-width:1440px) {
+@media (max-width:1439px) {
     #topbar{
         justify-content: space-between;
         background: rgba(255, 255, 255,0.8);
@@ -989,7 +989,7 @@ footer > div{
     }
 }
 /* RWD:768以下 */
-@media (max-width:768px) {
+@media (max-width:767px) {
     /* top按鈕 */
     #fixedTop {
         bottom: 1rem;

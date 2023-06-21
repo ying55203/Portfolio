@@ -433,12 +433,12 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
         margin-left: 3rem;
     }
 }
-@media (min-width:1441px){
+@media (min-width:1440px){
 	.hamburger {
 		display: none;
 	}
 }
-@media (max-width:1440px) {
+@media (max-width:1439px) {
     #topbar{
         justify-content: space-between;
         background: rgba(255, 255, 255,0.8);
@@ -697,7 +697,7 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
 		padding: 15px 10px;
 	}
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
     /* top按鈕 */
     #fixedTop {
         bottom: 1rem;
@@ -863,7 +863,14 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
         margin-top: 1vh;
     }
     .orangeBlock{
+        top: -5rem;
         width: 40%;
+    }
+    .item_img img{
+        filter: drop-shadow(8px 8px 0px #FFC42D);
+    }
+    .item_img2 img{
+        filter: drop-shadow(8px 8px 0px #9999C3);
     }
     #personal_pugilism{
         height: 150vh;

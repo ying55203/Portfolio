@@ -214,7 +214,7 @@ hr{
         margin-right: 13px;
     }
 }
-@media (max-width:1440px) {
+@media (max-width:1439px) {
     #banner{
         height: 60vh;
     }
@@ -268,7 +268,7 @@ hr{
     }
     
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
     img.logo {
         width: 150px;
         height: auto;

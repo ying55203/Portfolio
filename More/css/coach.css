@@ -531,7 +531,7 @@ div{
 			width: 90%;
 		}
 	}
-	@media (max-width:1440px) {
+	@media (max-width:1439px) {
 		#banner{
 			height: 50vh;
 		}
@@ -787,7 +787,7 @@ div{
 			padding: 0 10px;
 		}
 	}
-@media (max-width: 768px){
+@media (max-width: 767px){
 	img.logo {
 		width: 150px;
 		height: auto;

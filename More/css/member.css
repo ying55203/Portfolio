@@ -129,8 +129,8 @@ body{
   font-family: 'Noto Sans TC', sans-serif;
 }
 img {
-display: block;
-width: 100%;
+  display: block;
+  width: 100%;
 }
 section{
   display: flex;
@@ -369,7 +369,7 @@ footer > div{
   background-image: url(../image/member/Banner-bg.jpg);
   background-size:cover;
   background-position: bottom;
-  height: 100vh;
+  height: 90vh;
 }
 #banner img{
   width: 18%;
@@ -442,6 +442,7 @@ footer > div{
 .num{
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 p.counter {
   font-weight: 900;
@@ -453,11 +454,14 @@ p.counter {
 .num span{
   font-weight: 500;
   font-size: 5.625rem;
-  line-height: 9rem;
+  line-height: 200%;
   letter-spacing: 0.05em;
   color: #F88D8E;
 }
 /* experience */
+figure.rwd_pic{
+  display: none;
+}
 #experience{
   position: relative;
 }
@@ -504,6 +508,7 @@ flex-direction: column;
   letter-spacing: 0.1em;
   color: #F0B278;
 }
+
 /* carousel 輪播css*/
   .hero-slider {
     width: 70%;
@@ -632,7 +637,7 @@ flex-direction: column;
     object-fit: cover;
     height: 100%;
 }
-@media (max-width:1919x) {
+@media (max-width:1919px) {
   /* 導覽列 */
   nav{
       font-size: 1rem;
@@ -678,23 +683,96 @@ flex-direction: column;
       font-size: .75rem;
   }
   /* 會員區 */
-  #banner h1 {
+  #banner{
+    height: 90vh;
+  }
+  #banner h1{
     font-size: 2.9rem;
-    margin-top: -3rem;
-    padding: 0.5rem 1rem 0.5rem 3rem;
+    padding: 0.8rem 2rem 0.8rem 3.5rem;
     border: 9px solid #F0B278;
   }
-  #banner img {
+  #banner img{
     width: 254px;
     height: auto;
   }
+  img.table {
+    width: 38%;
+    margin: 10vh 0;
+  }
+  img.pinkBlock {
+    width: 16%;
+    top: 20vh;
+    left: -5%;
+  }
+  img.yellowBlock {
+    width: 18%;
+    top: 50vh;
+    right: -6%;
+  }
+  #count{
+    height: 60vh;
+  }
+  .number_item p, .number_item1 p, .number_item2 p{
+    line-height: 1rem;
+    font-size: 1.875rem;
+  }
+  p.counter{
+    font-size: 4.68rem;
+  }
+  .num span{
+    font-size: 4.18rem;
+  }
+  img.orangeBlock {
+    width: 15%;
+    top: -10vh;
+    left: 10%;
+  }
+  .experience_title img{
+    width: 85px;
+    height: auto;
+  }
+  .title_text span{
+    font-size: 1.25rem;
+  }
+  .title_text p{
+    font-size: 2.25rem;
+  }
+  .hero-slider .flickity-prev-next-button .arrow{
+    stroke-width: 10px;
+  }
+  img.member_title{
+    width: 273px;
+    height: auto;
+    margin-right: 30%;
+  }
+  .member_item{
+    height: 40vh;
+  }
+  figure{
+    height: 39vh;
+  }
+  .member_text{
+    font-size: 1.125rem;
+    line-height: 200%;
+  }
+  .hero-slider{
+    margin-top: -5vh;
+    margin-left: 8rem;
+  }
+  .hero-slider .flickity-page-dots{
+    bottom: 60px;
+  }
+  img.yellowBlock2{
+    width: 15%;
+    bottom: -10vh;
+  }
 }
-@media (min-width:1441px){
+@media (min-width:1440px){
 	.hamburger {
 		display: none;
 	}
 }
-@media (max-width:1440px) {
+@media (max-width:1439px) {
     #topbar{
         justify-content: space-between;
         background: rgba(255, 255, 255,0.8);
@@ -747,9 +825,6 @@ flex-direction: column;
     ul.morelogo{
       width: 0%;
   }
-  .reserve_btn{
-    margin-left: 2rem;
-}
 	.navigation {
 		display: none;
 		position: absolute;
@@ -762,9 +837,122 @@ flex-direction: column;
 		backdrop-filter: blur(5px);
 		animation: navigation 0.35s both;
 	}
-    #banner{
-        height: 80vh;
-    }
+  .menu{
+    padding: 2rem 0;
+  }
+  .reserve_btn {
+      margin-left: 0;
+      margin-bottom: 2rem;
+  }
+  .reserve_btn a{
+      padding: 1rem 1.8rem;
+      margin: 0 auto;
+  }
+  /* 會員區 */
+  #banner{
+    height: 70vh;
+  }
+  #banner h1{
+    font-size: 2.18rem;
+    padding: 0.5rem 1rem 0.5rem 3rem;
+    border: 9px solid #F0B278;
+  }
+  #banner img{
+    width: 191px;
+    height: auto;
+  }
+  img.yellowBlock,
+  img.pinkBlock{
+    width: 0;
+  }
+  img.table {
+    margin: 5vh 0;
+  }
+  .number_item p, .number_item1 p, .number_item2 p {
+    font-size: 1.25rem;
+    line-height: 200%;
+  }
+  p.counter {
+    font-size: 3.125rem;
+  }
+  .num span {
+    font-size: 2.81rem;
+  }
+  #count {
+    height: 38vh;
+    background-size: 200% 100%;
+  }
+  .number_item, .number_item1, .number_item2 {
+    padding: 1rem 5rem;
+  }
+  #experience{
+    height: 90vh;
+  }
+  .experience_title{
+    margin-top: 6vh;
+  }
+  .experience_title img{
+    width: 70px;
+  }
+  .title_text span{
+    font-size: 1.03rem;
+    line-height: 200%;
+  }
+  .title_text p{
+    font-size: 1.86rem;
+    line-height: 200%;
+  }
+  .member_item figure{
+    display: none;
+  }
+  figure.rwd_pic{
+    display: block;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+  }
+  figure.rwd_pic img{
+    width: 220px;
+    height: 220px;
+  }
+  img.member_title{
+    width: 258px;
+    margin: 0 auto -2.5rem auto;
+  }
+  .member_item {
+    height: 290px;
+    width: 475px;
+    border-radius: 11px;
+  }
+  .member_text {
+    font-size: 1rem;
+    line-height: 180%;
+    margin: 0 2rem;
+}
+  .flickity-prev-next-button{
+    top: 70%;
+  }
+  .flickity-prev-next-button svg{
+    width: 40%;
+    height: 40%;
+  }
+  .hero-slider{
+    width: 80%;
+    margin-right: 5rem;
+  }
+  .hero-slider .flickity-prev-next-button .arrow{
+    stroke-width: 8px;
+  }
+  .flickity-prev-next-button.next{
+    right: 0;
+  }
+  .hero-slider .flickity-page-dots{
+    display: none;
+  }
+  img.yellowBlock2{
+    width: 0;
+  }
     /* footer */
     #fixedTop{
         bottom: 4rem;
@@ -834,7 +1022,7 @@ flex-direction: column;
 		padding: 15px 10px;
 	}
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
   /* top按鈕 */
   #fixedTop {
     bottom: 1rem;
@@ -845,7 +1033,7 @@ flex-direction: column;
       padding: 0.2rem;
   }
   img.logo {
-    width: 133px;
+    width: 150px;
     height: auto;
   }
   .hamburger {
@@ -935,5 +1123,92 @@ flex-direction: column;
       color: #616161;
       background-color: #FFF0CA;
       font-size: 0.75rem;
+  }
+  /* 會員區 */
+  #banner{
+    height: 40vh;
+  }
+  #banner img {
+    width: 122px;
+  }
+  #banner h1{
+    font-size: 1.2rem;
+    line-height: 200%;
+    padding: 0.5rem 1.2rem 0.5rem 2rem;
+    border: 4px solid #F0B278;
+    margin-top: -1rem;
+  }
+  img.table {
+    width: 311px;
+    height: auto;
+    margin: 8vh 0;
+  }
+  #count{
+    height: 30vh;
+  }
+  .number_item p, .number_item1 p, .number_item2 p{
+    font-size: 0.92rem;
+  }
+  p.counter{
+    font-size: 1.56rem;
+  }
+  .num span {
+    font-size: 1.43rem;
+  }
+  .number_item, .number_item1, .number_item2 {
+    padding: .5rem 2rem;
+  }
+  img.orangeBlock{
+    width: 0;
+  }
+  .experience_title {
+    width: 60%;
+  }
+  .experience_title img{
+    width: 85px;
+    height: 85px;
+  }
+  .title_text span {
+    font-size: 1.375rem;
+  }
+  .title_text p{
+    font-size: 1.9rem;
+    letter-spacing: 0.1em;
+  }
+  figure.rwd_pic{
+    margin-bottom: 1rem;
+  }
+  figure.rwd_pic img {
+    width: 210px;
+    height: 210px;
+  }
+  img.member_title{
+    width: 190px;
+    margin-bottom: -1.5rem;
+    background-color: #FFFFFF;
+  }
+  .member_item {
+    height: 360px;
+    width: 310px;
+    border-radius: 7px;
+    border: 3px solid #F0B278;
+  }
+  .member_text {
+    font-size: 0.93rem;
+    line-height: 200%;
+    margin: 0 1.5rem;
+  }
+  .hero-slider .flickity-prev-next-button {
+    display: none;
+  }
+  .hero-slider .flickity-page-dots{
+    display: block;
+    bottom: 20px;
+  }
+  .hero-slider .flickity-page-dots .dot{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: #FFE5CD;
   }
 }
