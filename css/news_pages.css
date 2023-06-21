@@ -1,0 +1,339 @@
+#banner{
+    width: 100%;
+    background-image: url(../image/news/newsBanner-bg.jpg);
+    background-size:cover;
+    background-position: bottom;
+    height: 40vh;
+}
+main {
+    overflow: hidden;
+}
+section{
+    width: 80%;
+}
+.list_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#news{
+    position: relative;
+}
+img.orangeBlock{
+    width: 280px;
+    height: 280px!important;
+    position:absolute;
+    top: 440px;
+    left: 200px;
+    z-index: -1;
+    animation: block 2s ease-in;
+}
+img.pinkBlock{
+    width: 200px;
+    height: 214px!important;
+    position:absolute;
+    bottom: -220px;
+    left: 60px;
+    z-index: -1;
+    animation: block 2.5s ease-in;
+}
+img.yellowBlock{
+    width: 730px;
+    height: 680px!important;
+    position: absolute;
+    top: 300px;
+    right: -350px;
+    z-index: -1;
+    animation: block 2.5s ease-in;
+}
+@keyframes block{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.news_title{
+    margin-top: 100px;
+}
+.title_img img{
+    width: 100px;
+    height: 100px;
+}
+.title{
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 200%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.13em;
+}
+.title a{
+    text-decoration: none;
+    display: flex;
+    color: #000000;
+}
+.title span{
+    color: #8C4948;
+    border-bottom: #8C4948 3px solid;
+}
+.list_item{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list_item img{
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    filter: drop-shadow(20px 20px 0px #FFC42D);
+}
+.list_item span{
+    padding-top: 50px;
+    font-size: 1.5rem;
+    line-height: 200%;
+    letter-spacing: 0.1em;
+    color: #616161;
+}
+.list_item h4{
+    font-size: 2.25rem;
+    line-height: 200%;
+    letter-spacing: 0.15em;
+    color: #000000;
+    font-weight: bold;
+}
+.list_item p{
+    font-size: 1.25rem;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    color: #212121;
+    text-align: start;
+}
+.text_box{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+hr{
+    width: 100%;
+    border: 1.5px solid #616161;
+    margin: 40px 0;
+}
+#button{
+    margin: 50px 0;
+    width: 65%;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 100px;
+}
+.prev ,.next{
+    display: flex;
+    align-items: center;
+}
+.prev img,.next img{
+    width: 36px;
+    height: 36px;
+    margin: 5px 20px;
+}
+.prev a,.next a{
+    text-decoration: none;
+    display: flex;
+}
+.prev p,.next p{
+    font-size: 2.25rem;
+    color: #8C4948;
+}
+@media (max-width:1919px) {
+    #banner{
+        height: 50vh;
+    }
+    .news_title {
+        margin-top: 20vh;
+    }
+    .title {
+        font-size: 1.68rem;
+    }
+    img.pinkBlock{
+        bottom: -180px;
+    }
+    img.orangeBlock {
+        width: 250px;
+        height: auto!important;
+        position: absolute;
+        top: 425px;
+        left: 140px;
+    }
+    img.yellowBlock {
+        width: 430px;
+        height: auto!important;
+        position: absolute;
+        top: 300px;
+        right: -250px;
+        z-index: -1;
+    }
+    .list_item img{
+        width: 564px;
+        height: 403px;
+        filter: drop-shadow(16px 16px 0px #FFC42D);
+    }
+    .text_box {
+        width: 52%;
+    }
+    hr {
+        margin: 30px 0;
+    }
+    .list_item span{
+        font-size: 1.18rem;
+    }
+    .list_item h4{
+        font-size: 1.81rem;
+    }
+    .list_item p{
+        font-size: 1rem;
+    }
+    .prev p, .next p{
+        font-size: 1.5rem;
+    }
+    .prev img, .next img {
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+        margin-left: 13px;
+    }
+    .prev img{
+        margin-right: 13px;
+    }
+}
+@media (max-width:1439px) {
+    #banner{
+        height: 60vh;
+    }
+    .news_title {
+        margin-top: 20vh;
+    }
+    #news{
+        overflow: hidden;
+    }
+    img.yellowBlock {
+        width: 20%;
+        height: auto!important;
+        position: absolute;
+        top: 2vh;
+        right: 15%;
+        z-index: -1;
+    }
+    img.orangeBlock{
+        display: none;
+    }
+    img.pinkBlock{
+        width: 20%;
+        height: auto!important;
+        position:absolute;
+        bottom: 0;
+        left: 15%;
+        z-index: -1;
+    }
+    .list_item figure{
+        display: flex;
+        justify-content: center;
+    }
+    .list_item img{
+        width: 80%;
+        height: 35vh;
+    }
+    .text_box{
+        width: 50%;
+    }
+    .list_item h4{
+        font-size: 1.5rem;
+    }
+    .list_item span{
+        font-size: 1.125rem;
+    }
+    .list_item p{
+        font-size: 1rem;
+    }
+    hr {
+        margin: 20px 0;
+    }
+    
+}
+@media (max-width:767px) {
+    img.logo {
+        width: 150px;
+        height: auto;
+    }
+    img.yellowBlock {
+        display: none;
+    }
+    img.pinkBlock {
+        display: none;
+    }
+    #banner {
+        height: 45vh;
+    }
+    .title {
+        font-size: 1.375rem;
+        font-weight: 700;
+        margin-top: -20px;
+    }
+    .title_img{
+        margin-top: -40px;
+    }
+    .title_img img {
+        width: 115px;
+        height: 115px;
+    }
+    .title span {
+        color: #8C4948;
+        border-bottom: #8C4948 3px solid;
+    }
+    .title a {
+        margin: 0 20px;
+    }
+    .list_item img {
+        width: 80%;
+        height: 30vh;
+        filter: drop-shadow(8px 8px 0px #FFC42D);
+    }
+    .text_box {
+        width: 80%;
+    }
+    .list_item span {
+        font-size: 1.18rem;
+    }
+    .list_item h4 {
+        font-size: 1.375rem;
+    }
+    hr {
+        border: none;
+        height: 1px;
+        background-color: black;
+        margin: 15px 0;
+    }
+    .list_item p {
+        font-size: 1.06rem;
+    }
+    .prev p, .next p {
+        font-size: 1.25rem;
+    }
+    .prev img, .next img {
+        width: 20px;
+        height: 15px;
+        margin-left: 10px;
+    }
+    #button {
+        margin: 0;
+        width: 80%;
+    }
+}

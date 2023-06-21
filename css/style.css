@@ -1,0 +1,689 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+/* eric css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	/* 不累加邊框與內距 */
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+		"蘋方-繁", "PingFang TC", "Noto Sans TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+}
+ol,ul {
+	list-style: none;
+}
+blockquote,q {
+	quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 共用 */
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+img {
+	display: block;
+	width: 100%;
+}
+main{
+    /* margin-top: 120px; */
+    display: flex;
+    flex-direction: column;
+    /* 設定主軸為垂直 */
+    justify-content: center;
+    /* 設定主軸(垂直)置中 */
+    align-items: center;
+    /* 設定幅軸(水平)置中 */
+}
+section {
+	display: flex;
+	flex-direction: column;
+	/* 設定主軸為垂直 */
+	justify-content: center;
+	/* 設定主軸(垂直)置中 */
+	align-items: center;
+	/* 設定幅軸(水平)置中 */
+}
+div{
+    display: flex;
+    flex-direction: column;
+    /* 設定主軸為垂直 */
+    justify-content: flex-start;
+    /* 設定主軸(垂直)靠上 */
+    align-items: center;
+    /* 設定幅軸(水平)置中 */
+}
+img.logo{
+    width: 18%;
+    display: none;
+}
+/* -------------------------------------------------------- */
+/* 導覽列 */
+#topbar{
+    position: fixed;/*固定上方*/
+    display: flex;
+    justify-content: center;/* 主軸:置中 */
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 1.2rem;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.25);
+    font-size: 1.125rem;
+}
+.morelogo{
+    width: 16%;
+    margin:0 -1rem 0 1rem;
+}
+#topbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    padding-top: 2px;/* 底線的高度 */
+}
+.menu a{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color:#424242;
+    padding: 0.5rem 0.8rem;
+}
+.menu a:hover{
+	color: #C94344;
+}
+.menu li::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #C94344;
+}
+.menu li:hover::after{
+    width: 100%;
+    /* transition: .1s; */
+}
+.menu a:active{
+    color: #C94344;
+}
+.reserve_btn a{
+    display: block;
+    text-decoration: none;
+    padding: 1rem 1.8rem;
+    margin:0 1rem 0 -2rem;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    background-color: #C94344;
+    font-weight: 700;
+    color:#fff;
+}
+.reserve_btn a:hover{
+    background-color: #FFEAEA;
+    color: #C94344;
+    border: 2px solid #C94344;
+}
+/* 頁尾區 */
+footer {
+    margin-top: 10vh;
+    background-image: url(../image/Footer-bg.jpg);
+	color: #621D1C;
+	padding: 4rem;
+	/* 內距會包含背景 */
+	text-align: center;
+}
+.footer_icon a {
+	display: block;
+    margin-right: 2rem;
+    width: 45px;
+	height: 45px;
+}
+.icon-fb {
+	background-image: url(../image/icon/fb.svg);
+}
+.icon-ig {
+	background-image: url(../image/icon/ig.svg);
+
+}
+.icon-line {
+	background-image: url(../image/icon/line.svg);
+}
+.icon-fb:hover{
+    background-image: url(../image/icon/fb_h.png);
+}
+.icon-ig:hover{
+    background-image: url(../image/icon/ig_h.png);
+}
+.icon-line:hover{
+    background-image: url(../image/icon/line_h.png);
+}
+footer ul{
+    display: flex;
+	justify-content: center;
+}
+h2.footer_title{
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding: 0 .5rem .6rem .5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 5px solid #FFC42D;
+}
+.menu_title{
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin: 1rem 2.5rem;
+    padding-bottom: 1rem;
+    
+}
+.menu_title p{
+    margin: 1rem 0;
+    font-weight: 400;
+}
+.footer_menu{
+    font-size: 1.125rem;
+}
+.footer_menu a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    color: #621D1C;
+}
+.footer_menu li{
+    display: flex;
+    flex-direction: column;
+}
+.footer_reserve_btn img{
+    width: 20%;
+}
+.footer_reserve_btn .r_btn{
+    background-image: url(../image/icon/right_w.svg);
+    width: 12px;
+    height: 20px;
+    margin-left: 3rem;
+    margin-top: 5px;
+}
+.footer_reserve_btn a{
+    margin-left: 3rem;
+    padding: 1rem 3rem;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    border: 2.5px solid #C94344;
+    background-color: #C94344;
+    border-radius: 50px;
+}
+.footer_reserve_btn{
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_reserve_btn a:hover{
+    background-color: transparent;
+    color: #C94344;
+    border: 2.5px solid #C94344;
+}
+.footer_reserve_btn a:hover .r_btn{
+    background-image: url(../image/icon/right.svg);
+}
+.map{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+.map a{
+    display:block;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #C94344;
+    margin-left: .8rem;
+    padding: .5rem 1.1rem;
+    border-radius: 30px;
+    border:2px solid #C94344;
+}
+footer > div{
+    display: flex;
+    flex-direction: column;
+    /* 設定主軸為垂直 */
+    justify-content: flex-start;
+    /* 設定主軸(垂直)靠上 */
+    align-items: center;
+    /* 設定幅軸(水平)置中 */
+}
+/* top按鈕 */
+#fixedTop img{
+    width: 40px;
+    height: 40px;
+}
+#fixedTop{
+    color: #fff;
+    text-decoration:none;
+    background-color:#FFC42D;
+    border-radius: 50px;
+    position: fixed;
+    padding: 10px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99;
+    display: none;
+}
+@media (max-width:1919px) {
+    /* 導覽列 */
+    nav{
+        font-size: 1rem;
+    }
+    .logoMore img{
+        width: 90%;
+    }
+    .reserve_btn a {
+        padding: 0.8rem 1.5rem;
+    }
+    /* footer */
+    footer{
+        margin-top: 2vh;
+    }
+    .footer_reserve_btn{
+        margin-bottom: 1rem;
+    }
+    .footer_reserve_btn img {
+        width: 17%;
+    }
+    .footer_reserve_btn a{
+        font-size: 1rem;
+        padding: 0.7rem 1.6rem;
+    }
+    .footer_reserve_btn .r_btn{
+        margin-left: 2rem;
+        margin-top: 2px;
+    }
+    h2.footer_title {
+        font-size: 1rem;
+    }
+    .menu_title p {
+        font-size: 0.875rem;
+    }
+    .map{
+        font-size: 1rem;
+    }
+    .map a {
+        font-size: 0.6875rem;
+        padding: .4rem .7rem;
+    }
+    footer p{
+        font-size: .75rem;
+    }
+}
+@media (min-width:1440px){
+	.hamburger {
+		display: none;
+	}
+}
+@media (max-width:1439px) {
+    #topbar{
+        justify-content: space-between;
+        background: rgba(255, 255, 255,0.8);
+        padding: 0.7rem;
+    }
+	#topbar ul {
+		justify-content: center;
+	}
+    #topbar a{
+        display: block;
+    }
+    img.logo{
+        display: flex;
+        width: 155px;
+        height: auto;
+    }
+	/* 漢堡按鈕  */
+	.hamburger {
+		display: inline-block;/* 自動抓內容(.bar)的尺寸 */
+		cursor: pointer;
+		/* 取消button預設樣式 */
+		background-color: transparent;
+        background: #C94344;
+        border-radius: 50px;
+        border: 3px solid #F88D8E;
+        margin-right: 1rem;
+	}
+
+	.bar {
+		display: block;/* 修改span行內元素為區塊 */
+		width: 25px;
+		height: 3px;
+		margin: 6px 15px;
+        border-radius: 20px;
+		background-color: #FFFFFF;
+		transition: all 0.3s ease-in-out;
+	}
+	.hamburger.is-active .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	.hamburger.is-active .bar:nth-child(1) {
+		transform: translateY(9px) rotate(45deg);
+	}
+
+	.hamburger.is-active .bar:nth-child(3) {
+		transform: translateY(-9px) rotate(-45deg);
+	}
+    ul.morelogo{
+        width: 0%;
+    }
+    .reserve_btn{
+        margin-left: 2rem;
+    }
+	.navigation {
+		display: none;
+		position: absolute;
+		top: 95px;
+		right: 0;
+		padding: 0 20px;
+		border-radius: 5px;
+        font-size: 1.5rem;
+		background-color: rgb(255, 255, 255,0.8);
+		backdrop-filter: blur(5px);
+		animation: navigation 0.35s both;
+	}
+    .menu{
+        padding: 2rem 0;
+    }
+    .reserve_btn {
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+    .reserve_btn a{
+        padding: 1rem 1.8rem;
+        margin: 0 auto;
+    }
+    /* footer */
+    #fixedTop{
+        bottom: 4rem;
+        right: 2rem
+    }
+    footer p{
+        font-size: 0.75rem;
+    }
+    .footer_menu{
+        display: none;
+    }
+    
+    .footer_reserve_btn {
+        flex-direction: column;
+    }
+    .footer_reserve_btn img {
+        width: 30%;
+    }
+    .footer_reserve_btn a{
+        font-size: 1.06rem;
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+    }
+    .footer_reserve_btn{
+        margin:1rem 0 5rem 0;
+    }
+    footer ul{
+        margin-left: 2rem;
+    }
+    .map{
+        font-size: 1rem;
+    }
+    .map a{
+        padding: 0.35rem 0.8rem;
+        font-size: 0.68rem;
+    }
+	@keyframes navigation {
+		from {
+			opacity: 1;
+		}
+
+		to {
+			opacity: 0;
+		}
+	}
+	.navigation.show {
+		display: block;
+		animation: show 0.35s both;
+	}
+	@keyframes show {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	.menu {
+		flex-direction: column;
+		background-color: transparent;
+		backdrop-filter: none;
+		border: none;
+		box-shadow: none;
+	}
+	.menu a {
+		padding: 15px 10px;
+	}
+}
+@media (max-width:767px) {
+    /* top按鈕 */
+    #fixedTop {
+        bottom: 1rem;
+        right: 1rem;
+    }
+    /* 導覽列 */
+    #topbar{
+        padding: 0.2rem;
+    }
+    img.logo {
+        width: 133px;
+        height: auto;
+    }
+    .hamburger {
+        padding: 0.1rem 0.5rem;
+        margin: 0.5rem;
+    }
+    .bar {
+        width: 20px;
+        height: 2px;
+        margin: 4px 10px;
+        border-radius: 20px;
+    }
+    .hamburger.is-active .bar:nth-child(1) {
+		transform: translateY(6px) rotate(45deg);
+	}
+
+	.hamburger.is-active .bar:nth-child(3) {
+		transform: translateY(-6px) rotate(-45deg);
+	}
+    ul.morelogo{
+        width: 0%;
+    }
+    .navigation{
+        top: 68px;
+        right: 0;
+        padding: 10px 45px;
+        border-radius: 25px;
+        background-color: rgb(255, 255, 255,0.9);
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .reserve_btn{
+        margin-left: 0;
+    }
+    #fixedTop img {
+        width: 25px;
+        height: 25px;
+    }
+        /* footer */
+    .footer_reserve_btn img {
+        width: 180px;
+        height: auto;
+    }
+    .footer_reserve_btn a {
+        font-weight: 500;
+        font-size: 0.93rem;
+        padding: 0.7rem 2.3rem;
+    }
+    .footer_reserve_btn a img {
+        width: 8px;
+    }
+    .footer_reserve_btn {
+        margin-bottom: 1rem;
+    }
+    .footer_reserve_btn .r_btn{
+        background-image: url(../image/rwd390/right_w.png);
+        width: 7px;
+        height: 12px;
+        margin-left: 2rem;
+    }
+    .footer_icon a {
+        width: 32px;
+        height: 30px;
+    }
+    .icon-fb {
+        background-image: url(../image/rwd390/fb.png);
+    }
+    .icon-ig {
+        background-image: url(../image/rwd390/ig.png);
+    }
+    .icon-line {
+        background-image: url(../image/rwd390/line.png);
+    }
+    .map a{
+        display: none;
+    }
+    .map {
+        font-size: 0.875rem;
+        margin-bottom: 4rem;
+    }
+    footer{
+        padding: 4rem 0 0 0;
+    }
+    footer p {
+        padding: 1rem 5rem;
+        line-height: 180%;
+        color: #616161;
+        background-color: #FFF0CA;
+        font-size: 0.75rem;
+    }
+}
