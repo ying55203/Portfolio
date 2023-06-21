@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoreFitness_News</title>
+    <!-- 公告輪播css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css'>
+    <link rel="stylesheet" href="./css/news_carousel.css">
+</head>
+<style>
+    .list_item h2::before{ 
+        background-color: #F88D8E;
+        opacity: 0.5;
+    }
+    .orangeBlock1{
+        position: absolute;
+        width: 230px;
+        height: 200px!important;
+        top: 250px;
+        left: -20px;
+        z-index: -1;
+    }
+    .yellowBlock1{
+        position: absolute;
+        width: 200px;
+        height: 200px!important;
+        top: 150px;
+        right: 200px;
+    }
+    .pinkBlock1{
+        position: absolute;
+        width: 220px;
+        height: 200px!important;
+        bottom: 0;
+        right: 50px;
+    }
+    @media (max-width:768px) {
+    .orangeBlock1{
+        width: auto;
+        height: 150px!important;
+        top: 200px;
+        left: -20px;
+    }
+    .yellowBlock1{
+        width: auto;
+        height: 150px!important;
+        top: 120px;
+        right: 200px;
+        z-index: -1;
+    }
+    .pinkBlock1{
+        width: auto;
+        height: 150px!important;
+        bottom: 0;
+        right: -25px;
+        z-index: -1;
+    }
+}
+@media (max-width:390px) {
+    .orangeBlock1{
+        width: auto;
+        height: 100px!important;
+        top: 200px;
+        left: -20px;
+    }
+    .yellowBlock1{
+        width: auto;
+        height: 100px!important;
+        top: 120px;
+        right: 100px;
+        z-index: -1;
+    }
+    .pinkBlock1{
+        width: auto;
+        height: 150px!important;
+        bottom: 0;
+        right: -25px;
+        z-index: -1;
+    }
+}
+</style>
+<body>
+    <header id="topbar">
+        <a href="index.html"><img src="./image/logo/logo.png" alt="MoreFitness" class="logo"></a>
+        <!-- 漢堡按鈕 -->
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <!-- 導覽列 -->
+        <nav class="navigation">
+            <ul class="morelogo">
+                <li class="logoMore"><a href="index.html"><img src="./image/logo/logo.svg" alt="More"></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="feature.html">環境特色</a></li>
+                <li><a href="class.html">課程種類</a></li>
+                <li><a href="coach.html">教練介紹</a></li>
+                <li><a href="news.html">活動消息</a></li>
+                <li><a href="member.html">會員制度</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+            <ul class="reserve_btn">
+                <li><a href="reserve.html">預約體驗</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 活動公告 -->
+    <!-- 主要內容區 -->
+    <main>
+        <!-- banner區 -->
+        <section id="banner">
+            <div class="news_title">
+            <img src="./image/news/NewsTitle.png" alt="">
+        </div>
+        <!-- partial:index.partial.html 公告輪播-->
+        <div class="hero-slider" data-carousel>
+        <div class="carousel-cell">
+            <div class="inner">
+                <figure class="news_caro"><img src="./image/news/festival.png" alt="">
+                    <figcaption><h3 class="subtitle">2023.05.20</h3>
+                        <h2 class="title">端午節活動報名</h2>
+                        <a href="./active230520.html" class="complete_btn">詳細內容</a>
+                    </figcaption>
+                </figure>
+            </div>
+            </div>
+        </div>
+    </section>
+        <section id="news">
+            <div class="title_img"><img src="./image/news/啞鈴-03.svg" alt=""></div>
+            <h2 class="title"><a href="./news.html">公告消息</a> / <span>特別活動</span></h2>
+            <img src="./image/news/pinkBlock.png" alt="" class="pinkBlock1">
+                <img src="./image/news/yellowBlock.png" alt="" class="yellowBlock1">
+                <img src="./image/news/orangeBlock.png" alt="" class="orangeBlock1">
+            <div class="list_box">
+                <article class="list_item pink">
+                    <a href="./active230520.html">
+                    <figure><img src="./image/news/moon_cake.jpg" alt=""></figure>
+                    <h2>端午節活動報名</h2>
+                    <p>活動簡介：
+                        一年一度的端午節即將到來啦~傳統粽子的熱量食計算下來可不容小覷，想有節日儀式感又怕辛苦白費怎麼辦?
+                        莫爾改良低熱量DIY健康粽配方，讓美好假期能粽情享受又不增重。歡迎大朋友、小朋友、爸媽帶著小孩報名參加。
+                        </p>
+                    <span class="date">2023.05.20</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <!-- <section id="button">
+            <div class="btn">
+                <div class="prev"><a href="#">
+                    <img src="./image/icon/leftbtn.svg" alt="">
+                    <p>Prev</p>
+                </a></div>
+                <div class="next"><a href="#">
+                    <p>Next</p>
+                    <img src="./image/icon/rightbtn.svg" alt="">
+                </a></div>
+            </div>
+        </section> -->
+    </main>
+    <!-- 首尾區 -->
+    <footer>
+        <div class="footer_reserve_btn">
+            <img src="./image/logo/logo.svg" alt="">
+            <a href="./reserve.html">免費預約體驗<div class="r_btn"></div></a>
+        </div>
+        <ul class="footer_menu">
+            <li><a href="about.html" class="menu_title">
+                <h2 class="footer_title">關於我們</h2>
+                    <p>基本介紹</p>
+                    <p>LOGO介紹</p></a></li>
+            <li><a href="feature.html" class="menu_title">
+                <h2 class="footer_title">環境特色</h2>
+                    <p>兒童遊戲區</p>
+                    <p>休憩交誼廳</p>
+                    <p>運動按摩室</p>
+                    <p>重訓器材室</p>
+                    <p>團體課教室</p></a></li>
+            <li><a href="class.html" class="menu_title">
+                <h2 class="footer_title">課程種類</h2>
+                    <p>團體課程</p>
+                    <p>個人課程</p>
+                    <p>親子課程</p>
+                    <p>兒童課程</p></a></li>
+            <li><a href="coach.html" class="menu_title">
+                    <h2 class="footer_title">教練介紹</h2>
+                    <p>私人教練</p>
+                    <p>常見問題</p></a></li>
+            <li><a href="news.html" class="menu_title">
+                    <h2 class="footer_title">活動消息</h2>
+                    <p>公告消息</p>
+                    <p>特別活動</p></a></li>
+            <li><a href="member.html" class="menu_title">
+                    <h2 class="footer_title">會員制度</h2>
+                    <p>會員制度</p>
+                    <p>會員心得</p></a></li>
+            <li><a href="contact.html" class="menu_title">
+                    <h2 class="footer_title">聯絡我們</h2>
+                    <p>聯絡資訊</p>
+                    <p>交通方式</p></a></li>
+        </ul>
+        <ul class="footer_icon">
+            <li><a href="#" target="_blank" class="icon-fb"></a></li>
+                <li><a href="#" target="_blank" class="icon-ig"></a></li>
+                <li><a href="#" target="_blank" class="icon-line"></a></li>
+        </ul>
+        <div class="map">
+            100 台北市中正區濟南路一段321號<a href="#">Map</a>
+        </div>
+        <p>Website Image Source：Unsplash /  Copyright © 莫爾健身 All rights reserved.</p>
+    </footer>
+    <script src="./jQuery/js/jquery-1.11.3.min.js"></script>
+    <!-- partial 公告輪播-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js'></script>
+    <script  src="./JS/news_carousel.js"></script>
+</body>
+</html>
