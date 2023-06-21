@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoreFitness_Reserve</title>
+    <!-- JS -->
+    <script src="./jQuery/js/jquery-1.11.3.min.js"></script>
+    <script src="./JS/top.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reserve.css">
+</head>
+<body>
+    <!-- 首頁 -->
+    <header id="topbar">
+        <a href="index.html"><img src="./image/logo/logo.png" alt="MoreFitness" class="logo"></a>
+        <!-- 漢堡按鈕 -->
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <!-- 導覽列 -->
+        <nav class="navigation">
+            <ul class="morelogo">
+                <li class="logoMore"><a href="index.html"><img src="./image/logo/logo.svg" alt="More"></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="feature.html">環境特色</a></li>
+                <li><a href="class.html">課程種類</a></li>
+                <li><a href="coach.html">教練介紹</a></li>
+                <li><a href="news.html">活動消息</a></li>
+                <li><a href="member.html">會員制度</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+            <ul class="reserve_btn">
+                <li><a href="reserve.html">預約體驗</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 預約表單 -->
+    <!-- 主要內容區 -->
+    <main>
+        <div id="reserve_bg">
+        <section id="reserve">
+        <!-- 左體驗圖 -->
+        <section id="reserve_pic">
+            <div class="logo_box">
+                <img src="./image/reserve/free.png" alt="free" class="freepic">
+                <img src="./image/home/fitness.gif" alt="logo" class="logopic">
+            </div>
+            <h2 class="reserve_title">預約體驗</h2>
+            <p class="reserve_p1">請填寫右方表單，將由專員與您聯繫確認體驗時間等細節</p>
+            <p class="reserve_p2">請填寫下方表單，將由專員與您聯繫</p>
+        </section>
+        <!-- 表單區 -->
+        <section id="reserve_from">
+            <form name="message_form" id="message_form" action="" method="post">
+            <div class="message_box">
+                <div class="text_box">
+                    <label for="username">姓名</label>
+                    <input type="text" name="username" id="username" title="請輸入姓名" placeholder="請輸入真實姓名，現場需核對身分" required
+                        autocomplete="on">
+                </div>
+                <div class="text_box">
+                    <label for="tel">聯絡電話</label>
+                    <input type="tel" name="tel" id="tel" title="請輸入電話" placeholder="ex. 0988-888-888" autocomplete="on">
+                </div>
+            </div>
+            <div class="message_box">
+                <div class="text_box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" title="請輸入Email" placeholder="如有填寫，將會寄送確認預約信給您" required
+                        autocomplete="on">
+                </div>
+                <div class="text_box">
+                <label for="time">方便聯繫時間</label>
+                    <select name="time" id="time">
+                        <option>整天</option>
+                        <!-- <option value="整天">整天</option> -->
+                        <option value="上午">上午</option>
+                        <option value="下午">下午</option>
+                        <option value="晚上">晚上</option>
+                    </select>
+                </div>
+            </div>
+                <fieldset style="width: 80%; margin: 20px 0;">
+                    <legend>想體驗的內容*</legend>
+                    <small>(僅能選擇一項，如有特別指定課程種類請於備註區填寫，我們將盡量安排)</small>
+                    <br>
+                    <input type="radio" name="class" id="class1" value="團體課程">
+                    <label for="class1" class="label_option">團體課程</label>
+                    <input type="radio" name="class" id="class2" value="個人課程(私人教練課)">
+                    <label for="class2" class="label_option">個人課程(私人教練課)</label>
+                    <input type="radio" name="class" id="class3" value="親子課程">
+                    <label for="class3" class="label_option">親子課程</label>
+                    <input type="radio" name="class" id="class4" value="兒童課程">
+                    <label for="class4" class="label_option">兒童課程</label>
+                </fieldset>
+
+                <fieldset style="width: 80%; margin: 20px 0;">
+                    <legend>是否需要專人導覽環境*</legend>
+                    <input type="radio" name="person" id="person1" value="是">
+                    <label for="person1" class="label_option">是，我想由專人帶我導覽環境</label>
+                    <input type="radio" name="person" id="person2" value="否">
+                    <label for="person2" class="label_option">否，我不需要專人導覽環境</label>
+                </fieldset>
+
+                <label for="message">備註</label>
+                <br>
+                <textarea name="message" id="message" title="請填寫這個欄位"></textarea>
+                <br>
+                <small>莫爾健身不會將個人資料提供給任何第三人，或移作其他目的使用，僅用作此次預約體驗之聯絡用途。</small>
+                <!-- 送出按鈕須放在form裡面 -->
+                <br>
+                <button>
+                    <div class="button"><span>送出表單</span><img src="./image/icon/rightbtn_b.svg" alt=""></div>
+                </button>
+            </form>
+        </section>
+    </section>
+    </div>
+    </main>
+    <!-- 首尾區 -->
+    <footer>
+        <div class="footer_reserve_btn">
+            <img src="./image/logo/logo.svg" alt="">
+            <a href="./reserve.html">免費預約體驗<div class="r_btn"></div></a>
+        </div>
+        <ul class="footer_menu">
+            <li><a href="about.html" class="menu_title">
+                <h2 class="footer_title">關於我們</h2>
+                    <p>基本介紹</p>
+                    <p>LOGO介紹</p></a></li>
+            <li><a href="feature.html" class="menu_title">
+                <h2 class="footer_title">環境特色</h2>
+                    <p>兒童遊戲區</p>
+                    <p>休憩交誼廳</p>
+                    <p>運動按摩室</p>
+                    <p>重訓器材室</p>
+                    <p>團體課教室</p></a></li>
+            <li><a href="class.html" class="menu_title">
+                <h2 class="footer_title">課程種類</h2>
+                    <p>團體課程</p>
+                    <p>個人課程</p>
+                    <p>親子課程</p>
+                    <p>兒童課程</p></a></li>
+            <li><a href="coach.html" class="menu_title">
+                    <h2 class="footer_title">教練介紹</h2>
+                    <p>私人教練</p>
+                    <p>常見問題</p></a></li>
+            <li><a href="news.html" class="menu_title">
+                    <h2 class="footer_title">活動消息</h2>
+                    <p>公告消息</p>
+                    <p>特別活動</p></a></li>
+            <li><a href="member.html" class="menu_title">
+                    <h2 class="footer_title">會員制度</h2>
+                    <p>會員制度</p>
+                    <p>會員心得</p></a></li>
+            <li><a href="contact.html" class="menu_title">
+                    <h2 class="footer_title">聯絡我們</h2>
+                    <p>聯絡資訊</p>
+                    <p>交通方式</p></a></li>
+        </ul>
+        <ul class="footer_icon">
+            <li><a href="#" target="_blank" class="icon-fb"></a></li>
+                <li><a href="#" target="_blank" class="icon-ig"></a></li>
+                <li><a href="#" target="_blank" class="icon-line"></a></li>
+        </ul>
+        <div class="map">
+            100 台北市中正區濟南路一段321號<a href="#">Map</a>
+        </div>
+        <p>Website Image Source：Unsplash /  Copyright © 莫爾健身 All rights reserved.</p>
+    </footer>
+    <script src="./jQuery/js/jquery-1.11.3.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
