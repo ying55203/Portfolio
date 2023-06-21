@@ -887,6 +887,7 @@ flex-direction: column;
   }
   #experience{
     height: 90vh;
+    justify-content: space-around;
   }
   .experience_title{
     margin-top: 6vh;
@@ -1126,7 +1127,7 @@ flex-direction: column;
   }
   /* 會員區 */
   #banner{
-    height: 40vh;
+    height: 50vh;
   }
   #banner img {
     width: 122px;
@@ -1147,7 +1148,7 @@ flex-direction: column;
     height: 30vh;
   }
   .number_item p, .number_item1 p, .number_item2 p{
-    font-size: 0.92rem;
+    font-size: 0.9rem;
   }
   p.counter{
     font-size: 1.56rem;
@@ -1160,6 +1161,10 @@ flex-direction: column;
   }
   img.orangeBlock{
     width: 0;
+  }
+  #experience{
+    height: 120vh;
+    justify-content: space-around;
   }
   .experience_title {
     width: 60%;
@@ -1174,6 +1179,10 @@ flex-direction: column;
   .title_text p{
     font-size: 1.9rem;
     letter-spacing: 0.1em;
+  }
+  .hero-slider{
+    height: 90vh;
+    margin-left: 6rem;
   }
   figure.rwd_pic{
     margin-bottom: 1rem;

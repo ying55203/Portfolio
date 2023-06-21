@@ -602,11 +602,11 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
     }
     #group_yoga,
     #group_aerobic{
-        height: 130vh;
+        height: 150vh;
         background-size: 150% 100%;
     }
     #personal_pugilism{
-        height: 100vh;
+        height: 130vh;
         background-size: 130% 100%;
         margin-bottom: -1vh;
     }
@@ -615,14 +615,14 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
     #kids_gymnastics,
     #kids_badminton,
     #kids_yoga{
-        height: 85vh;
+        height: 100vh;
         background-size: 130% 100%;
     }
     #group_retrain,
     #parentChild_yoga,
     #parentChild_dance,
     #parentChild_tabletennis{
-        height: 80vh;
+        height: 100vh;
         background-size: 130% 100%;
     }
     /* footer */
@@ -873,20 +873,22 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
         filter: drop-shadow(8px 8px 0px #9999C3);
     }
     #personal_pugilism{
-        height: 150vh;
-        background-size: 140% 100%;
-        margin-bottom: -7vh;
+        height: 180vh;
+        background-size: 250% 100%;
+        margin-bottom: -10vh;
     }
     #group_yoga, #group_aerobic{
-        height: 160vh;
+        height: 230vh;
         background-size: 250% 100%;
     }
     #personal_freeRetrain, #personal_retrain, #kids_gymnastics, #kids_badminton, #kids_yoga{
-        height: 120vh;
+        height: 150vh;
+        background-size: 250% 100%;
     }
     #group_retrain, #parentChild_yoga, #parentChild_dance, #parentChild_tabletennis{
-        height: 100vh;
-        background-size: 200% 100%;
+        height: 150vh;
+        background-size: 250% 100%;
+        margin-bottom: -10vh;
     }
     .item_box{
         flex-direction: column;
