@@ -419,6 +419,9 @@ img.cafe_png{
     top: 30vh;
     left: 8rem;
 }
+img.mask_png{
+    display: none;
+}
 img.cloud_png{
     width: 1184px;
     height: auto;
@@ -514,6 +517,9 @@ p.light::before{
 .jumpBtn a:hover .btnImg{
     background-image: url(../image/home/right_btn_y.svg);
 }
+img.banner_p{
+    display: none;
+}
 /* about區 */
 #about{
     width: 91.5%;
@@ -521,6 +527,7 @@ p.light::before{
     background-image: url(../image/home/about_bg.png);
     background-size:cover;
     background-position: left;
+    background-repeat: no-repeat;
     margin: 5rem -10rem 10vh 0;
     position: relative;
     overflow: hidden;
@@ -636,6 +643,11 @@ span.feature_span{
     width: 80%;
     align-items: flex-start;
     margin-top: 8vh;
+}
+img.play_png2,
+img.cafe_png2,
+img.sleep_png2{
+    display: none;
 }
 .feature_kid,
 .feature_relax,
@@ -1057,6 +1069,9 @@ figure.res_p{
         margin-top: 5vh;
         margin-bottom: 5vh;
     }
+    .res_text{
+        margin-top: -48vh;
+    }
     .res_text p{
         font-size: 1.1rem;
         margin: 1rem 2rem 2rem 2rem;
@@ -1128,9 +1143,6 @@ figure.res_p{
     ul.morelogo{
         width: 0%;
     }
-    .reserve_btn{
-        margin-left: 2rem;
-    }
 	.navigation {
 		display: none;
 		position: absolute;
@@ -1143,9 +1155,172 @@ figure.res_p{
 		backdrop-filter: blur(5px);
 		animation: navigation 0.35s both;
 	}
-    #banner{
-        height: 80vh;
+    .menu{
+        padding: 2rem 0;
     }
+    .reserve_btn {
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+    .reserve_btn a{
+        padding: 1rem 1.8rem;
+        margin: 0 auto;
+    }
+    /* 首頁banner */
+    #banner {
+        height: 85vh;
+    }
+    img.cloud_png{
+        display: none;
+    }
+    img.mask_png{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 40vh;
+    }
+    img.fitness_gif {
+        width: 230px;
+        right: 15%;
+        bottom: -15%;
+    }
+    img.cafe_png {
+        width: 160px;
+        left: -1rem;
+    }
+    img.sleep_png {
+        width: 180px;
+        top: 15vh;
+        right: 18rem;
+    }
+    img.play_png {
+        width: 150px;
+        right: 15%;
+    }
+    .banner_item {
+        margin-left: -15rem;
+        margin-top: 10rem;
+    }
+    .banner_item h1 {
+        font-size: 4.5rem;
+    }
+    .banner_item h2 {
+        font-size: 3.375rem;
+    }
+    p.light {
+        font-size: 1.56rem;
+        margin: 1.3rem 0 2rem 0;
+    }
+    p.light::before {
+        height: 1rem;
+        bottom: 0;
+        left: -1rem;
+    }
+    /* about */
+    #about {
+        background-size: 150% 90%;
+        margin-top: 35vh;
+    }
+    img.about01_p,
+    img.about02_p,
+    img.about03_p{
+        display: none;
+    }
+    img.banner_p{
+        display: block;
+        position: absolute;
+        width: 314px;
+        height: auto;
+        left: -5%;
+        top: 105vh;
+    }
+    #about img.sleep_gif{
+        display: none;
+    }
+    .about_item{
+        margin-right: -25%;
+    }
+    .item_title img{
+        width: 71px;
+    }
+    .title_text p {
+        font-size: 1.875rem;
+    }
+    span.about_span,
+    span.feature_span,
+    .course_span
+    {
+        font-size: 1.04rem;
+    }
+    .text{
+        width: 80%;
+    }
+    .text p{
+        margin: 0 0.8rem;
+    }
+    #about .jumpBtn{
+        width: 75%;
+    }
+    /* feature */
+    #feature{
+        background-size: 200% 100%;
+        overflow: hidden;
+    }
+    img.feature_play,
+    img.feature_tea,
+    img.feature_sleep{
+        display: none;
+    }
+    .feature_text {
+        width: 35%;
+    }
+    img.play_png2,
+    img.cafe_png2,
+    img.sleep_png2{
+        display: block;
+        position: absolute;
+    }
+    .feature_item{
+        flex-direction: column;
+    }
+    .feature_kid,
+    .feature_relax,
+    .feature_massage{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .feature_kid,
+    .feature_massage{
+        margin-left: -10%;
+    }
+    img.play_png2{
+        width: 203px;
+        height: auto;
+        top: 30vh;
+        left: 100%;
+    }
+    img.sleep_png2{
+        width: 238px;
+        height: auto;
+        top: -2vh;
+        right: -25%;
+        transform: scaleX(-1) rotate(15deg);
+    }
+    .feature_relax{
+        margin-left: 50%;
+    }
+    .feature_relax .feature_text{
+        width: 75%;
+    }
+    img.cafe_png2{
+        width: 238px;
+        height: auto;
+        top: 10vh;
+        right: 130%;
+        transform: rotate(15deg);
+    }
+    /* reserve */
     /* footer */
     #fixedTop{
         bottom: 4rem;

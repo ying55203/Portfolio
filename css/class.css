@@ -731,14 +731,14 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
         width: 0%;
     }
     .navigation{
-        background-color: rgb(255, 255, 255,0.8);
+        background-color: rgb(255, 255, 255,0.9);
         top: 69px;
         right: 0;
         padding: 10px 45px;
         border-radius: 25px;
     }
     .reserve_btn{
-        margin-left: 3rem;
+        margin-left: 0;
     }
     #fixedTop img {
         width: 25px;

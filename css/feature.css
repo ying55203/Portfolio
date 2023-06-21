@@ -1025,7 +1025,9 @@ li.side_5.active{
     /* 兒童遊戲區 */
     #kids
     {
-        padding-bottom: 15vh;
+        padding-top: 20vh;
+        padding-bottom: 20vh;
+        height: 120vh;
     }
     .img_box{
         width: 90%;
@@ -1055,7 +1057,7 @@ li.side_5.active{
     #relax,
     #equipmentRoom {
         background-size: 300% 100%;
-        height: 110vh;
+        height: 120vh;
     }
     #relax .bigImg,
     #relax .smallImg,
