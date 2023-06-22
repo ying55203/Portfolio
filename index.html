@@ -48,6 +48,7 @@
             <img src="./image/home/cloud.png" alt="" class="cloud_png">
             <img src="./image/home/banner_mask_rwd.png" alt="" class="mask_png">
             <img src="./image/home/fitness.gif" alt="" class="fitness_gif">
+            <img src="./image/home/free_390.png" alt="" class="free_r_png">
             <div class="banner_item">
                 <h1>複合式</h1>
                 <h2>健身中心</h2>
@@ -61,7 +62,7 @@
             </div>
             <img src="./image/home/about02.png" alt="" class="banner_p">
         </section>
-        <section id="about">
+        <section id="about" class="smoove">
             <img src="./image/home/about01.png" alt="" class="about01_p">
             <img src="./image/home/about02.png" alt="" class="about02_p">
             <img src="./image/home/about03.png" alt="" class="about03_p">
@@ -92,7 +93,7 @@
                 </div>
             </div>
         </section>
-        <section id="feature">
+        <section id="feature" class="smoove">
             <div class="item_title">
                 <img src="./image/home/啞鈴-05.svg" alt="">
                 <div class="title_text">
@@ -150,7 +151,7 @@
                 </div>
             </div>
         </section>
-        <section id="course">
+        <section id="course" class="smoove">
             <div class="item_title">
                 <img src="./image/home/啞鈴-04.svg" alt="">
                 <div class="title_text">
@@ -227,6 +228,7 @@
             </div>
             <div class="res">
                 <figure class="res_p"><img src="./image/home/reserve.png" alt=""></figure>
+                <figure class="res_p_r"><img src="./image/home/reserve_768.png" alt=""></figure>
                 <div class="res_text">
                     <h2>預約體驗</h2>
                     <p>歡迎免費預約體驗課程或參觀將由專人帶你一同導覽環境！</p>
@@ -288,5 +290,14 @@
     </footer>
     <script src="./jQuery/js/jquery-1.11.3.min.js"></script>
     <script src="./JS/script.js"></script>
+    <!-- jQuery Smoove -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
+    <!-- activate jQuery Smoove -->
+    <script>
+        $('.smoove').smoove({
+            offset: '40%',
+            min_width: 0
+        });
+    </script>
 </body>
 </html>
