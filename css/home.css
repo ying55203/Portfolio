@@ -419,7 +419,8 @@ img.cafe_png{
     top: 30vh;
     left: 8rem;
 }
-img.mask_png{
+img.mask_png,
+img.free_r_png{
     display: none;
 }
 img.cloud_png{
@@ -821,6 +822,9 @@ transform: translateX(0);
     color: #212121;
 }
 /* course---reserve區塊 */
+.res_p_r img{
+    display: none;
+}
 #course .res{
     height: 80vh;
     margin-top: 5vh;
@@ -1188,6 +1192,7 @@ figure.res_p{
     img.cafe_png {
         width: 160px;
         left: -1rem;
+        z-index: 2;
     }
     img.sleep_png {
         width: 180px;
@@ -1216,6 +1221,9 @@ figure.res_p{
         height: 1rem;
         bottom: 0;
         left: -1rem;
+    }
+    .jumpBtn p{
+        font-size: 1.25rem;
     }
     /* about */
     #about {
@@ -1264,7 +1272,7 @@ figure.res_p{
     }
     /* feature */
     #feature{
-        background-size: 200% 100%;
+        background-size: 300% 100%;
         overflow: hidden;
     }
     img.feature_play,
@@ -1283,6 +1291,7 @@ figure.res_p{
     }
     .feature_item{
         flex-direction: column;
+        margin-left: 10%;
     }
     .feature_kid,
     .feature_relax,
@@ -1292,26 +1301,26 @@ figure.res_p{
     }
     .feature_kid,
     .feature_massage{
-        margin-left: -10%;
+        margin-left: -30%;
     }
     img.play_png2{
         width: 203px;
         height: auto;
         top: 30vh;
-        left: 100%;
+        left: 90%;
     }
     img.sleep_png2{
         width: 238px;
         height: auto;
         top: -2vh;
-        right: -25%;
+        right: -20%;
         transform: scaleX(-1) rotate(15deg);
     }
     .feature_relax{
         margin-left: 50%;
     }
     .feature_relax .feature_text{
-        width: 75%;
+        width: 280px;
     }
     img.cafe_png2{
         width: 238px;
@@ -1320,7 +1329,39 @@ figure.res_p{
         right: 130%;
         transform: rotate(15deg);
     }
-    /* reserve */
+    /* course-reserve */
+    #course .item_title img{
+        width: 71px;
+    }
+    figure.res_p{
+        display: none;
+    }
+    figure.res_p_r{
+        width: 505px;
+        overflow: hidden;
+    }
+    .res_p_r img {
+        display: block;
+        object-fit: cover;
+        height: 100%;
+    }
+    .res_text{
+        width: 270px;
+        margin-top: -35vh;
+        margin-right: 0%;
+    }
+    .res_text h2{
+        font-size: 2.18rem;
+        margin-bottom: 0.3rem;
+    }
+    .res_text p{
+        font-size: 1.06rem;
+        line-height: 200%;
+        margin: .5rem 1rem 1rem 1.2rem;
+    }
+    .res_text a{
+        padding: 0.8rem 1.3rem 0.8rem 3.2rem;
+    }
     /* footer */
     #fixedTop{
         bottom: 4rem;
@@ -1401,7 +1442,7 @@ figure.res_p{
         padding: 0.2rem;
     }
     img.logo {
-        width: 133px;
+        width: 155px;
         height: auto;
     }
     .hamburger {
@@ -1440,7 +1481,184 @@ figure.res_p{
         width: 25px;
         height: 25px;
     }
-        /* footer */
+    /* 首頁 */
+    /* banner */
+    #banner{
+        background-size: 400% 100%;
+        height: 60vh;
+    }
+    img.sleep_png,
+    img.cafe_png,
+    img.play_png,
+    img.mask_png{
+        display: none;
+    }
+    .banner_item{
+        margin: -20vh auto 0 auto;
+    }
+    .banner_item h1{
+        font-size: 3.25rem;
+        margin-bottom: 1rem;
+    }
+    .banner_item h2{
+        font-size: 2.875rem;
+    }
+    img.fitness_gif{
+        width: 211px;
+        top: 100%;
+        right: 0%;
+    }
+    p.light{
+        font-size: 1.375rem;
+    }
+    .banner_item .jumpBtn{
+        display: none;
+    }
+    img.free_r_png{
+        display: block;
+        width: 107px;
+        height: auto;
+        position: absolute;
+        bottom: -10%;
+        left: 20%;
+    }
+    /* about */
+    #about{
+        background-image: none;
+        height: 120vh;
+        padding-bottom: 10vh;
+    }
+    .item_title{
+        margin: 10vh auto;
+    }
+    .title_text p{
+        font-size: 2.125rem;
+    }
+    span.about_span,
+    span.feature_span,
+    .course_span{
+        font-size: 1.375rem;
+    }
+    img.banner_p{
+        display: none;
+    }
+    .about_item{
+        width: 80%;
+        margin: 15vh auto 20vh auto;
+    }
+    .text{
+        width: 100%;
+        writing-mode: horizontal-tb;/* 文字變回水平排列 */
+        align-items: center
+    }
+    .text p{
+        line-height: 300%;
+    }
+    .text p.brown{
+        margin-bottom:.8rem;
+    }
+    #about .jumpBtn{
+        align-items: center
+    }
+    .jumpBtn p{
+        font-size: 1.06rem;
+    }
+    .jumpBtn .btnImg{
+        width: 20px;
+        height: 20px;
+        margin-top: 1px;
+        background-image: url(../image/rwd390/right_btn.png)
+    }
+    /* feature */
+    #feature{
+        background-size: 650% 100%;
+    }
+    .item_title img{
+        width: 81px;
+    }
+    img.play_png2,
+    img.cafe_png2,
+    img.sleep_png2{
+        display: none;
+    }
+    img.feature_play,
+    img.feature_tea,
+    img.feature_sleep
+    {
+        display: block;
+    }
+    img.feature_play{
+        left: -10%;
+        top: 45%;
+    }
+    img.feature_tea
+    {
+        left: 200px;
+        top: 45%;
+    }
+    img.feature_sleep
+    {
+        left: -10%;
+        top: 40%;
+    }
+    .feature_item{
+        margin: 2vh auto 10vh auto;
+    }
+    .feature_kid,
+    .feature_massage,
+    .feature_relax{
+        margin: 10vh auto;
+    }
+    .feature_title{
+        width: 240px;
+    }
+    .feature_item figure{
+        width: 270px;
+    }
+    .feature_text{
+        width: 268px;
+    }
+    .feature_text p{
+        text-align: justify; /* 文字齊行 */
+        font-size: 1.06rem;
+    }
+    /* course-reserve */
+    #course{
+        margin: 10vh auto;
+    }
+    #course .item_title{
+        margin: 10vh auto;
+    }
+    #course .item_title img{
+        width: 81px;
+    }
+    .slider .slide{
+        margin-bottom: 5vh;
+    }
+    figure.res_p_r{
+        width: 438px;
+    }
+    .res_text{
+        width: 250px;
+        margin-top: -36vh;
+        margin-right: -2%;
+    }
+    .res_text p{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .res_text a{
+        font-size: 0.93rem;
+        font-weight: 500;
+        padding: 0.3rem 1.8rem 0.3rem 3.8rem;
+    }
+    .res_text a .r_btn{
+        background-image: url(../image/rwd390/right_w.png);
+        width: 7px;
+        height: 12px;
+        margin-left: 2rem;
+    }
+    /* footer */
     .footer_reserve_btn img {
         width: 180px;
         height: auto;
@@ -1473,6 +1691,15 @@ figure.res_p{
         background-image: url(../image/rwd390/ig.png);
     }
     .icon-line {
+        background-image: url(../image/rwd390/line.png);
+    }
+    .icon-fb:hover {
+        background-image: url(../image/rwd390/fb.png);
+    }
+    .icon-ig:hover {
+        background-image: url(../image/rwd390/ig.png);
+    }
+    .icon-line:hover {
         background-image: url(../image/rwd390/line.png);
     }
     .map a{

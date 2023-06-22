@@ -907,7 +907,7 @@ div{
     /* 教練詳情頁 */
     #teacher_1, #teacher_2, #teacher_3, #teacher_4, #teacher_5, #teacher_6, #teacher_7, #teacher_8, #teacher_9, #teacher_10, #teacher_11, #teacher_12 {
         width: 100%;
-        top: 20%;
+        top: 15%;
         left: 0%;
         z-index: 999;
     }

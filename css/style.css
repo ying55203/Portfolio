@@ -669,6 +669,15 @@ footer > div{
     .icon-line {
         background-image: url(../image/rwd390/line.png);
     }
+    .icon-fb:hover {
+        background-image: url(../image/rwd390/fb.png);
+    }
+    .icon-ig:hover {
+        background-image: url(../image/rwd390/ig.png);
+    }
+    .icon-line:hover {
+        background-image: url(../image/rwd390/line.png);
+    }
     .map a{
         display: none;
     }
