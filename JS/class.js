@@ -25,26 +25,33 @@ $(function () {
         }
     });
 
-     //---漢堡按鈕---
-     $('.hamburger').click(function () {
+    //---漢堡按鈕---
+    $('.hamburger').click(function () {
         $(this).toggleClass('is-active');
         $('.navigation').toggleClass('show');
     });
     // 色塊淡入
-  $(window).scroll(function(){
-    if($(this).scrollTop() > $('#class_container').offset().top + 800){
-      $('.orangeBlock').stop().fadeTo('normal',1);
-    }else{
-      $('.orangeBlock').stop().fadeOut('fast');
-    }
-  });
-  $(window).scroll(function(){
-    if($(this).scrollTop() > ($('#banner').offset().top)){
-      $('.pinkBlock').stop().fadeTo('normal',1);
-    }else{
-      $('.pinkBlock').stop().fadeOut('fast');
-    }
-  });
+    $(window).scroll(function(){
+        if($(this).scrollTop() > $('#class_container').offset().top + 800){
+            $('.orangeBlock').stop().fadeTo('normal',1);
+        }else{
+            $('.orangeBlock').stop().fadeOut('fast');
+        }
+    });
+    $(window).scroll(function(){
+        if($(this).scrollTop() > ($('#banner').offset().top)){
+        $('.pinkBlock').stop().fadeTo('normal',1);
+        }else{
+        $('.pinkBlock').stop().fadeOut('fast');
+        }
+    });
+//   點擊分類介紹跳轉華道下方
+    $('.content').click(function () {
+        window.scrollTo({
+            top: 2500,
+            behavior: "smooth"
+        });
+    });
 // 清除所有課程分類
     $("#tabs ul").click(function () {
         $(".group").hide("drop", { direction: "down" }, "fast");
@@ -118,11 +125,11 @@ $(function () {
         $("#kids_gymnastics").hide("drop", { direction: "down" }, "fast");
         $("#kids_badminton").hide("drop", { direction: "down" }, "fast");
     });
-// 清除所有課程分類
-    $("#tabs ul").click(function () {
-        $(".group").hide("drop", { direction: "down" }, "fast");
-        $(".personal").hide("drop", { direction: "down" }, "fast");
-        $(".parentChild").hide("drop", { direction: "down" }, "fast");
-        $(".kids").hide("drop", { direction: "down" }, "fast");
-    });
-}); 
+    // 清除所有課程分類
+        $("#tabs ul").click(function () {
+            $(".group").hide("drop", { direction: "down" }, "fast");
+            $(".personal").hide("drop", { direction: "down" }, "fast");
+            $(".parentChild").hide("drop", { direction: "down" }, "fast");
+            $(".kids").hide("drop", { direction: "down" }, "fast");
+        });
+    }); 
