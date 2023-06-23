@@ -1570,7 +1570,7 @@ figure.res_p{
         background-image: url(../image/rwd390/right_btn.png)
     }
     .jumpBtn a:hover .btnImg{
-        background-image: url(../image/rwd390/right_btn.png);
+        background-image: url(../image/rwd390/right_r.png);
     }
     /* feature */
     #feature{

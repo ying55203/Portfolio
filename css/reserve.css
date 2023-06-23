@@ -161,9 +161,7 @@ footer {
 }
 @media (max-width:1919px) {
     #reserve_bg{
-        height: 150vh;
-        padding-top: 0;
-        justify-content: center;
+        height: 120vh;
     }
     h2.reserve_title{
         font-size: 4.625rem;
