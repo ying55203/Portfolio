@@ -48,7 +48,7 @@ $(function () {
 //   點擊分類介紹跳轉滑到下方
     $('.content').click(function () {
         window.scrollTo({
-            top: 2500,
+            top: 2200,
             behavior: "smooth"
         });
     });
