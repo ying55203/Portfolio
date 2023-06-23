@@ -45,7 +45,7 @@ $(function () {
         $('.pinkBlock').stop().fadeOut('fast');
         }
     });
-//   點擊分類介紹跳轉華道下方
+//   點擊分類介紹跳轉滑到下方
     $('.content').click(function () {
         window.scrollTo({
             top: 2500,
