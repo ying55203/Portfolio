@@ -655,6 +655,10 @@ footer > div{
         width: 7px;
         height: 12px;
         margin-left: 2rem;
+        margin-top: 5px;
+    }
+    .footer_reserve_btn a:hover .r_btn{
+        background-image: url(../image/rwd390/right_r.png);
     }
     .footer_icon a {
         width: 32px;
