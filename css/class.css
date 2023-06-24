@@ -716,9 +716,10 @@ html .ui-button.ui-state-disabled:active{/* li 頁籤沒動作時樣式 */
         margin: 0.5rem;
     }
     .bar {
-        width: 14px;
+        width: 20px;
         height: 2px;
         margin: 4px 10px;
+        border-radius: 20px;
     }
     .hamburger.is-active .bar:nth-child(1) {
 		transform: translateY(6px) rotate(45deg);
