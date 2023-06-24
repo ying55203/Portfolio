@@ -1225,7 +1225,7 @@ flex-direction: column;
   }
   .hero-slider .flickity-page-dots{
     display: block;
-    bottom: 20px;
+    bottom: 5px;
   }
   .hero-slider .flickity-page-dots .dot{
     width: 30px;
