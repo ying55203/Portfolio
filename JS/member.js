@@ -24,10 +24,6 @@ $(function(){
     });
     
 });
-// 計數器
-// 啟動
-$('.counter').countUp();
-
 // 會員圖片輪播
 var options = {
     accessibility: true,
