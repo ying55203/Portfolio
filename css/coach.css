@@ -7,6 +7,10 @@
 	background-position:bottom;
 	padding-top: 5rem;
 }
+.slide-track .slide:nth-child(odd) img{
+	margin-top: 1rem;
+	width: 690px;
+}
 /* 教練影片 */
 #video{
 	margin-bottom: 9rem;
@@ -480,6 +484,9 @@ div{
 		.slide img {
 			width: 600px;
 		}
+		.slide-track .slide:nth-child(odd) img{
+			width: 550px;
+		}
 		.video_title h2{
 			font-size: 3rem;
 		}
@@ -534,6 +541,9 @@ div{
 	@media (max-width:1439px) {
 		#banner{
 			height: 50vh;
+		}
+		.slide-track .slide:nth-child(odd) img{
+			width: 450px;
 		}
 		.slide img {
 			width: 500px;
