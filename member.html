@@ -8,10 +8,25 @@
     <!-- 計數器css -->
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!-- 心得輪播css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css'>
     <link rel="stylesheet" href="./css/member.css">
 </head>
+<style>
+    p.warning{
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 200%;
+        letter-spacing: 0.2em;
+        margin-top: 1rem;
+        color: rgb(200, 35, 35);
+    }
+    @media (max-width:768px) {
+        p.warning{
+            font-size: .8rem;
+            letter-spacing: 0.1em;
+        }
+    }
+</style>
 <body>
 <!-- 首頁 -->
     <header id="topbar">
@@ -178,18 +193,14 @@
         100 台北市中正區濟南路一段321號<a href="#">Map</a>
     </div>
     <p>Website Image Source：Unsplash /  Copyright © 莫爾健身 All rights reserved.</p>
+    <p class="warning">***網站內容純屬虛構，僅作為學生專題練習及展示用***</p>
 </footer>
 <!-- 計數器JS -->
-<script src="./jQuery/js/jquery-3.7.0.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <script src="/jQuery/js/jquery.countup.js"></script>
 <!-- 心得輪播-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js'></script>
 <script src="./JS/member.js"></script>
-<script>
-    // 計數器
-    // 啟動
-    $('.counter').countUp();
-</script>
 </body>
 </html>

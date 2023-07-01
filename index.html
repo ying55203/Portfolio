@@ -8,6 +8,22 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/home.css">
 </head>
+<style>
+    p.warning{
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 200%;
+        letter-spacing: 0.2em;
+        margin-top: 1rem;
+        color: rgb(200, 35, 35);
+    }
+    @media (max-width:768px) {
+        p.warning{
+            font-size: .8rem;
+            letter-spacing: 0.1em;
+        }
+    }
+</style>
 <body>
     <!-- 首頁 -->
     <header id="topbar">
@@ -287,6 +303,7 @@
             100 台北市中正區濟南路一段321號<a href="#">Map</a>
         </div>
         <p>Website Image Source：Unsplash /  Copyright © 莫爾健身 All rights reserved.</p>
+        <p class="warning">***網站內容純屬虛構，僅作為學生專題練習及展示用***</p>
     </footer>
     <script src="./jQuery/js/jquery-1.11.3.min.js"></script>
     <script src="./JS/script.js"></script>
