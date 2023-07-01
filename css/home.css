@@ -1569,9 +1569,6 @@ figure.res_p{
         margin-top: 1px;
         background-image: url(../image/rwd390/right_btn.png)
     }
-    .jumpBtn a:hover .btnImg{
-        background-image: url(../image/rwd390/right_r.png);
-    }
     /* feature */
     #feature{
         background-size: 650% 100%;
@@ -1682,10 +1679,6 @@ figure.res_p{
         width: 7px;
         height: 12px;
         margin-left: 2rem;
-        margin-top: 5px;
-    }
-    .footer_reserve_btn a:hover .r_btn{
-        background-image: url(../image/rwd390/right_r.png);
     }
     .footer_icon a {
         width: 32px;
